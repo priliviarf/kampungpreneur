@@ -1,0 +1,379 @@
+/*
+	Project name : KampungPreneur Web
+	Author : KampungPreneur IT Support Team
+	Date created : 25 March 2017
+	Copyright (c) 2017. All Rights Reserved
+
+	FOR KAMPUNG PRENEUR ONLY
+ */
+/*Color Pallete for Kampung Preneur*/
+/* --- Font assets for KampungPreneur --- */
+@font-face {
+  font-family: "SourceSansPro-Bold";
+  src: url("../font/SourceSansPro-Bold.eot?#iefix") format("embedded-opentype"), url("../font/SourceSansPro-Bold.ttf") format("truetype"), url("../font/SourceSansPro-Bold.ttf.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: "SourceSansPro-Light";
+  src: url("../font/SourceSansPro-Light.eot?#iefix") format("embedded-opentype"), url("../font/SourceSansPro-Light.ttf") format("truetype"), url("../font/SourceSansPro-Light.ttf.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: "SourceSansPro-Regular";
+  src: url("../font/SourceSansPro-Regular.eot?#iefix") format("embedded-opentype"), url("../font/SourceSansPro-Regular.ttf") format("truetype"), url("../font/SourceSansPro-Regular.ttf.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: "SourceSansPro-Semibold";
+  src: url("../font/SourceSansPro-Semibold.eot?#iefix") format("embedded-opentype"), url("../font/SourceSansPro-Semibold.ttf") format("truetype"), url("../font/SourceSansPro-Semibold.ttf.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+.sourceSansBold {
+  font-family: 'SourceSansPro-Bold' !important; }
+
+.sourceSansLight {
+  font-family: 'SourceSansPro-Light' !important; }
+
+.sourceSansRegular {
+  font-family: 'SourceSansPro-Regular' !important; }
+
+.sourceSansSemiBold {
+  font-family: 'SourceSansPro-Semibold' !important; }
+
+/* --- Font Color --- */
+.wh {
+  color: #ffffff !important; }
+
+.bl {
+  color: #0094c9 !important; }
+
+.or {
+  color: #fcaa11 !important; }
+
+/* --- Font Size --- */
+.small {
+  font-size: 0.8em; }
+
+.normal {
+  font-size: 1em; }
+
+.big {
+  font-size: 1.2em; }
+
+.normalTitle {
+  font-size: 2.4em; }
+
+.bigTitle {
+  font-size: 3.75em; }
+
+/* --- Common reset --- */
+html, body {
+  font-family: 'SourceSansPro-Light';
+  margin: 0 auto;
+  padding: 0; }
+
+/* --- Margin and Padding --- */
+.mg-5 {
+  margin: 5px; }
+
+.mg-bt-5 {
+  margin-top: 5px;
+  margin-bottom: 5px; }
+
+.mg-lr-5 {
+  margin-left: 5px;
+  margin-right: 5px; }
+
+.mg-t-5 {
+  margin-top: 5px; }
+
+.mg-b-5 {
+  margin-bottom: 5px; }
+
+.mg-l-5 {
+  margin-left: 5px; }
+
+.mg-r-5 {
+  margin-right: 5px; }
+
+.mg-10 {
+  margin: 10px; }
+
+.mg-bt-10 {
+  margin-top: 10px;
+  margin-bottom: 10px; }
+
+.mg-lr-10 {
+  margin-left: 10px;
+  margin-right: 10px; }
+
+.mg-t-10 {
+  margin-top: 10px; }
+
+.mg-b-10 {
+  margin-bottom: 10px; }
+
+.mg-l-10 {
+  margin-left: 10px; }
+
+.mg-r-10 {
+  margin-right: 10px; }
+
+.mg-15 {
+  margin: 15px; }
+
+.mg-bt-15 {
+  margin-top: 15px;
+  margin-bottom: 15px; }
+
+.mg-lr-15 {
+  margin-left: 15px;
+  margin-right: 15px; }
+
+.mg-t-15 {
+  margin-top: 15px; }
+
+.mg-b-15 {
+  margin-bottom: 15px; }
+
+.mg-l-15 {
+  margin-left: 15px; }
+
+.mg-r-15 {
+  margin-right: 15px; }
+
+.mg-20 {
+  margin: 20px; }
+
+.mg-bt-20 {
+  margin-top: 20px;
+  margin-bottom: 20px; }
+
+.mg-lr-20 {
+  margin-left: 20px;
+  margin-right: 20px; }
+
+.mg-t-20 {
+  margin-top: 20px; }
+
+.mg-b-20 {
+  margin-bottom: 20px; }
+
+.mg-l-20 {
+  margin-left: 20px; }
+
+.mg-r-20 {
+  margin-right: 20px; }
+
+.mg-25 {
+  margin: 25px; }
+
+.mg-bt-25 {
+  margin-top: 25px;
+  margin-bottom: 25px; }
+
+.mg-lr-25 {
+  margin-left: 25px;
+  margin-right: 25px; }
+
+.mg-t-25 {
+  margin-top: 25px; }
+
+.mg-b-25 {
+  margin-bottom: 25px; }
+
+.mg-l-25 {
+  margin-left: 25px; }
+
+.mg-r-25 {
+  margin-right: 25px; }
+
+.mg-30 {
+  margin: 30px; }
+
+.mg-bt-30 {
+  margin-top: 30px;
+  margin-bottom: 30px; }
+
+.mg-lr-30 {
+  margin-left: 30px;
+  margin-right: 30px; }
+
+.mg-t-30 {
+  margin-top: 30px; }
+
+.mg-b-30 {
+  margin-bottom: 30px; }
+
+.mg-l-30 {
+  margin-left: 30px; }
+
+.mg-r-30 {
+  margin-right: 30px; }
+
+.pd-5 {
+  padding: 5px; }
+
+.pd-bt-5 {
+  padding-top: 5px;
+  padding-bottom: 5px; }
+
+.pd-lr-5 {
+  padding-left: 5px;
+  padding-right: 5px; }
+
+.pd-t-5 {
+  padding-top: 5px; }
+
+.pd-b-5 {
+  padding-bottom: 5px; }
+
+.pd-l-5 {
+  padding-left: 5px; }
+
+.pd-r-5 {
+  padding-right: 5px; }
+
+.pd-10 {
+  padding: 10px; }
+
+.pd-bt-10 {
+  padding-top: 10px;
+  padding-bottom: 10px; }
+
+.pd-lr-10 {
+  padding-left: 10px;
+  padding-right: 10px; }
+
+.pd-t-10 {
+  padding-top: 10px; }
+
+.pd-b-10 {
+  padding-bottom: 10px; }
+
+.pd-l-10 {
+  padding-left: 10px; }
+
+.pd-r-10 {
+  padding-right: 10px; }
+
+.pd-15 {
+  padding: 15px; }
+
+.pd-bt-15 {
+  padding-top: 15px;
+  padding-bottom: 15px; }
+
+.pd-lr-15 {
+  padding-left: 15px;
+  padding-right: 15px; }
+
+.pd-t-15 {
+  padding-top: 15px; }
+
+.pd-b-15 {
+  padding-bottom: 15px; }
+
+.pd-l-15 {
+  padding-left: 15px; }
+
+.pd-r-15 {
+  padding-right: 15px; }
+
+.pd-20 {
+  padding: 20px; }
+
+.pd-bt-20 {
+  padding-top: 20px;
+  padding-bottom: 20px; }
+
+.pd-lr-20 {
+  padding-left: 20px;
+  padding-right: 20px; }
+
+.pd-t-20 {
+  padding-top: 20px; }
+
+.pd-b-20 {
+  padding-bottom: 20px; }
+
+.pd-l-20 {
+  padding-left: 20px; }
+
+.pd-r-20 {
+  padding-right: 20px; }
+
+.pd-25 {
+  padding: 25px; }
+
+.pd-bt-25 {
+  padding-top: 25px;
+  padding-bottom: 25px; }
+
+.pd-lr-25 {
+  padding-left: 25px;
+  padding-right: 25px; }
+
+.pd-t-25 {
+  padding-top: 25px; }
+
+.pd-b-25 {
+  padding-bottom: 25px; }
+
+.pd-l-25 {
+  padding-left: 25px; }
+
+.pd-r-25 {
+  padding-right: 25px; }
+
+.pd-30 {
+  padding: 30px; }
+
+.pd-bt-30 {
+  padding-top: 30px;
+  padding-bottom: 30px; }
+
+.pd-lr-30 {
+  padding-left: 30px;
+  padding-right: 30px; }
+
+.pd-t-30 {
+  padding-top: 30px; }
+
+.pd-b-30 {
+  padding-bottom: 30px; }
+
+.pd-l-30 {
+  padding-left: 30px; }
+
+.pd-r-30 {
+  padding-right: 30px; }
+
+.noOffset {
+  padding: 0px !important;
+  margin: 0px !important; }
+
+.noMag {
+  margin: 0px !important; }
+
+.noPad {
+  padding: 0px !important; }
+
+/* --- Float --- */
+.floatLeft {
+  float: left; }
+
+.floatRight {
+  float: right; }
+
+/* --- align --- */
+.alignLeft {
+  text-align: left; }
+
+.alignRight {
+  text-align: right; }
+
+.alignCenter {
+  text-align: center; }
+
+/*# sourceMappingURL=kampungpreneur-style.css.map */

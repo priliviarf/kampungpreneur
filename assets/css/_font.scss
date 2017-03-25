@@ -1,0 +1,81 @@
+/* --- Font assets for KampungPreneur --- */
+
+@font-face{
+	font-family: 'SourceSansPro-Bold' ;
+	src : url('../font/SourceSansPro-Bold.eot?#iefix') format('embedded-opentype'),
+		url('../font/SourceSansPro-Bold.ttf') format('truetype'),
+		url('../font/SourceSansPro-Bold.ttf.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face{
+	font-family: 'SourceSansPro-Light' ;
+	src : url('../font/SourceSansPro-Light.eot?#iefix') format('embedded-opentype'),
+		url('../font/SourceSansPro-Light.ttf') format('truetype'),
+		url('../font/SourceSansPro-Light.ttf.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face{
+	font-family: 'SourceSansPro-Regular' ;
+	src : url('../font/SourceSansPro-Regular.eot?#iefix') format('embedded-opentype'),
+		url('../font/SourceSansPro-Regular.ttf') format('truetype'),
+		url('../font/SourceSansPro-Regular.ttf.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face{
+	font-family: 'SourceSansPro-Semibold' ;
+	src : url('../font/SourceSansPro-Semibold.eot?#iefix') format('embedded-opentype'),
+		url('../font/SourceSansPro-Semibold.ttf') format('truetype'),
+		url('../font/SourceSansPro-Semibold.ttf.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+.sourceSansBold {
+	font-family : 'SourceSansPro-Bold' !important;
+}
+
+.sourceSansLight {
+	font-family : 'SourceSansPro-Light' !important;
+}
+
+.sourceSansRegular {
+	font-family : 'SourceSansPro-Regular' !important;
+}
+
+.sourceSansSemiBold {
+	font-family : 'SourceSansPro-Semibold' !important;
+}
+
+/* --- Font Color --- */
+.wh{
+	color: $white !important;
+}
+.bl{
+	color: $blue !important;
+}
+.or{
+	color: $orange !important;
+}
+
+/* --- Font Size --- */
+.small {
+	font-size : 0.8em;
+}
+.normal {
+	font-size : 1em;
+}
+.big {
+	font-size : 1.2em;
+}
+.normalTitle {
+	font-size : 2.4em;
+}
+.bigTitle {
+	font-size : 3.75em;
+}

@@ -1,0 +1,32 @@
+/*
+	Project name : KampungPreneur Web
+	Author : KampungPreneur IT Support Team
+	Date created : 25 March 2017
+	Copyright (c) 2017. All Rights Reserved
+
+	FOR KAMPUNG PRENEUR ONLY
+ */
+
+ /*Color Pallete for Kampung Preneur*/
+$blue : #0094c9;
+$orange : #fcaa11;
+$white : #ffffff;
+$lightgray : #cccccc;
+$black: #282828;
+
+@mixin transition($time){
+	transition: all $time*1s ease-in-out ;
+	-webkit-transition: all $time*1s ease-in-out ;
+	-moz-transition: all $time*1s ease-in-out ;
+	-o-transition: all $time*1s ease-in-out ;
+}
+
+@mixin radius($rad){
+	border-radius: $rad*1px ;
+	-webkit-border-radius: $rad*1px ;
+	-moz-border-radius: $rad*1px ;
+	-o-border-radius: $rad*1px ;
+}
+
+ @import '_font';
+ @import '_reset';
