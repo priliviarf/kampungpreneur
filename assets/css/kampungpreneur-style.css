@@ -81,7 +81,7 @@
 
 /* --- Font Size --- */
 .small {
-  font-size: 0.8em; }
+  font-size: 0.9em; }
 
 .normal {
   font-size: 1em; }
@@ -473,7 +473,11 @@ select.form-control {
       background: #fcaa11;
       left: 50%;
       bottom: 10%;
-      transform: translate(-50%); }
+      transform: translate(-50%);
+      transition: all 0.3s ease-in-out;
+      -webkit-transition: all 0.3s ease-in-out;
+      -moz-transition: all 0.3s ease-in-out;
+      -o-transition: all 0.3s ease-in-out; }
   .navbar-nav .active a {
     color: #0094c9;
     transition: all 0.3s ease-in-out;
@@ -594,5 +598,9 @@ select.form-control {
   .fig-spec img {
     max-height: 200px;
     width: auto; }
+
+/* ================== NEWS =====================*/
+#news > .areaContainer {
+  background-color: #f7f7f7; }
 
 /*# sourceMappingURL=kampungpreneur-style.css.map */

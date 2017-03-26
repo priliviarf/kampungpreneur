@@ -141,3 +141,9 @@ $black: #282828;
 	 	width: auto;
  	}
  }
+ /* ================== NEWS =====================*/
+ #news {
+ 	&>.areaContainer{
+ 		background-color: $flatwhite;
+ 	}
+ }

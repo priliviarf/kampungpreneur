@@ -165,6 +165,7 @@ select.form-control {
 				left: 50%;
 				bottom: 10%;
 				transform: translate(-50%);
+				@include transition(0.3);
 			}
 		}
 	}
