@@ -125,6 +125,13 @@ h1 {
 	border-radius: 0px;
 }
 
+/* --- Form --- */
+select.form-control {
+	width: 200px;
+	display: inline;
+	border-radius: 0px;
+}
+
 /* --- KampungPreneurReset --- */
 .navbar {
 	background-color: $white;
@@ -180,3 +187,16 @@ h1 {
 		}
 	}
 }
+
+.owl-carousel{
+	img {
+		background-size: cover;
+		background-repeat: no-repeat ;
+		background-position: center ;
+	}
+}
+.owl-theme .owl-dots .owl-dot span {
+	background: $lightgray !important;
+}
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+  background: $blue !important; }

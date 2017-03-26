@@ -9,8 +9,11 @@
 
  /*Color Pallete for Kampung Preneur*/
 $blue : #0094c9;
+$lightblue : #01acf3;
 $orange : #fcaa11;
+$darkorange : #e67e22;
 $white : #ffffff;
+$flatwhite: #f7f7f7;
 $lightgray : #cccccc;
 $black: #282828;
 
@@ -67,12 +70,26 @@ $black: #282828;
  		background-color: $white;
  	}
  }
+ .btn-1 {
+ 	color: $white;
+ 	background-color: $orange;
+ 	@include transition(0.5);
+ 	&:hover {
+ 		color: $white;
+ 		background-color: $darkorange;
+ 	}
+ }
 
 /* Heading Style */
 .h2-title {
 	text-align: center;
 	font-family: 'OpenSans-SemiBold';
 }
+.h3-spec {
+	font-family: 'OpenSans-SemiBold';
+	color: $orange;
+}
+
 .areaContainer {
 	padding-top: 78px;
 	min-height: 100vh;
@@ -80,6 +97,11 @@ $black: #282828;
 .hrTitle {
     width: 80px;
     border: solid 2px $orange;
+}
+.hrSide {
+	max-width: 80px;
+	margin: 10px 0;
+	border: solid 2px $orange;
 }
  /* ================== Header =====================*/
  .headerCover {
@@ -111,4 +133,11 @@ $black: #282828;
  	border-bottom: 3px solid $lightgray;
  	text-align: center;
  	padding: 20px 0;
+ }
+ .fig-spec {
+ 	margin: 20px;
+ 	img{
+	 	max-height: 200px;
+	 	width: auto;
+ 	}
  }

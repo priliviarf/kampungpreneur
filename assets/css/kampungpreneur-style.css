@@ -48,6 +48,9 @@
   src: url("../fonts/OpenSans-SemiBold.ttf") format("truetype");
   font-weight: normal;
   font-style: normal; }
+.openSansSemiBold {
+  font-family: 'OpenSans-SemiBold' !important; }
+
 .sourceSansBold {
   font-family: 'SourceSansPro-Bold' !important; }
 
@@ -433,6 +436,12 @@ h1 {
 .btn {
   border-radius: 0px; }
 
+/* --- Form --- */
+select.form-control {
+  width: 200px;
+  display: inline;
+  border-radius: 0px; }
+
 /* --- KampungPreneurReset --- */
 .navbar {
   background-color: #ffffff; }
@@ -481,6 +490,17 @@ h1 {
       bottom: 10%;
       transform: translate(-50%); }
 
+.owl-carousel img {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.owl-theme .owl-dots .owl-dot span {
+  background: #cccccc !important; }
+
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+  background: #0094c9 !important; }
+
 /* -------------------------------------------- KampungPreneurStyle ---------------------------------------------------------- */
 .navbar {
   font-family: 'OpenSans-Bold'; }
@@ -501,10 +521,25 @@ h1 {
     color: #0094c9;
     background-color: #ffffff; }
 
+.btn-1 {
+  color: #ffffff;
+  background-color: #fcaa11;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out; }
+  .btn-1:hover {
+    color: #ffffff;
+    background-color: #e67e22; }
+
 /* Heading Style */
 .h2-title {
   text-align: center;
   font-family: 'OpenSans-SemiBold'; }
+
+.h3-spec {
+  font-family: 'OpenSans-SemiBold';
+  color: #fcaa11; }
 
 .areaContainer {
   padding-top: 78px;
@@ -512,6 +547,11 @@ h1 {
 
 .hrTitle {
   width: 80px;
+  border: solid 2px #fcaa11; }
+
+.hrSide {
+  max-width: 80px;
+  margin: 10px 0;
   border: solid 2px #fcaa11; }
 
 /* ================== Header =====================*/
@@ -548,5 +588,11 @@ h1 {
   border-bottom: 3px solid #cccccc;
   text-align: center;
   padding: 20px 0; }
+
+.fig-spec {
+  margin: 20px; }
+  .fig-spec img {
+    max-height: 200px;
+    width: auto; }
 
 /*# sourceMappingURL=kampungpreneur-style.css.map */
