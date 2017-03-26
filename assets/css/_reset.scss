@@ -5,9 +5,14 @@ html, body{
 	padding: 0;
 }
 figure {
-	margin-top:0px;
+	margin:0px;
 	&>img {
 		width: 100%;
+	}
+}
+a {
+	&:hover {
+		text-decoration: none;
 	}
 }
 .containerCenter {
@@ -119,6 +124,10 @@ h1 {
 	font-size: 4em;
 	font-family: 'SourceSansPro-Bold';
 }
+h2 {
+	font-size: 3em;
+	font-family: 'SourceSansPro-Bold';
+}
 
 /* --- Button --- */
 .btn {
@@ -191,9 +200,7 @@ select.form-control {
 
 .owl-carousel{
 	img {
-		background-size: cover;
-		background-repeat: no-repeat ;
-		background-position: center ;
+		@include img-bg();
 	}
 }
 .owl-theme .owl-dots .owl-dot span {

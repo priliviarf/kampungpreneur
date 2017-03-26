@@ -35,19 +35,20 @@ $black: #282828;
 	height: 100% ;
 	background: $color;
 	opacity: $opa;
-	position: absolute ;
-	margin : 0 ;
-	padding : 0 ;
-	top : 0 ;
-	left : 0 ;
+	position: absolute;
 }
 
 @mixin button($color,$border){
 	font-family: 'OpenSans-SemiBold';
-	border: 1px solid $border;
+	border: 2px solid $border;
 	padding: 12px 20px;
 	color: $color;
 	@include transition(0.5);
+}
+@mixin img-bg(){
+	background-size: cover;
+	background-repeat: no-repeat ;
+	background-position: center ;
 }
 
  @import '_font';
@@ -70,6 +71,15 @@ $black: #282828;
  		background-color: $white;
  	}
  }
+ .btn2 {
+ 	@include button($blue,$lightgray);
+
+ 	&:hover {
+ 		color: $white;
+ 		background-color: $blue;
+ 		border: 2px solid $blue;
+ 	}
+ }
  .btn-1 {
  	color: $white;
  	background-color: $orange;
@@ -85,7 +95,7 @@ $black: #282828;
 	text-align: center;
 	font-family: 'OpenSans-SemiBold';
 }
-.h3-spec {
+.h3-spec,.h4-spec {
 	font-family: 'OpenSans-SemiBold';
 	color: $orange;
 }
@@ -108,9 +118,7 @@ $black: #282828;
  	width: 100%;
  	height: 100vh;
  	background: url('../img/wallpaper.jpg');
- 	background-size: cover;
- 	background-repeat: no-repeat ;
- 	background-position: center ;
+ 	@include img-bg();
  	background-attachment: fixed;
 
  	.overlay {
@@ -145,5 +153,28 @@ $black: #282828;
  #news {
  	&>.areaContainer{
  		background-color: $flatwhite;
+ 	}
+ }
+ .post {
+ 	min-height: 400px;
+ 	background-color: $white;
+ 	img {
+ 		@include img-bg();
+ 	}
+ }
+ .date {
+ 	color: $lightgray;
+ 	font-size: 0.8em;
+ 	font-family: 'OpenSans-Regular';
+ }
+ /* ================== FEATURES/PENDAMPINGAN =====================*/
+ .features {
+ 	position: relative;
+ 	background: url('../img/wallpaper.jpg');
+ 	@include img-bg();
+ 	background-attachment: fixed;
+
+ 	.overlay{
+ 		@include overlay($black,0.8);
  	}
  }
