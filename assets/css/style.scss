@@ -39,6 +39,14 @@ $black: #282828;
 	left : 0 ;
 }
 
+@mixin button($color,$border){
+	font-family: 'SourceSansPro-Regular';
+	border: 1px solid $border;
+	padding: 12px 20px;
+	color: $color;
+	@include transition(0.5);
+}
+
  @import '_font';
  @import '_reset';
 
@@ -51,6 +59,15 @@ $black: #282828;
  		height: 100%;
  	}
  }
+ .btn1 {
+ 	@include button($white,$white);
+
+ 	&:hover {
+ 		color: $blue;
+ 		background-color: $white;
+ 	}
+ }
+
  /* ================== Header =====================*/
  .headerCover {
  	width: 100%;
@@ -62,6 +79,17 @@ $black: #282828;
  	background-attachment: fixed;
 
  	.overlay {
- 		@include overlay($black,0.4);
+ 		@include overlay($black,0.8);
+ 	}
+
+ 	h1:after {
+ 		content: "";
+ 		position: absolute;
+ 		width: 10%;
+ 		height: 3px;
+ 		background: $orange;
+ 		left: 50%;
+ 		bottom: 2.5em;
+ 		transform: translate(-50%);
  	}
  }
