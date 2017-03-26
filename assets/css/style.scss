@@ -80,6 +80,14 @@ $black: #282828;
  		border: 2px solid $blue;
  	}
  }
+ .btn3 {
+ 	@include button($orange,$orange);
+
+ 	&:hover {
+ 		color: $white;
+ 		background-color: $orange;
+ 	}
+ }
  .btn-1 {
  	color: $white;
  	background-color: $orange;

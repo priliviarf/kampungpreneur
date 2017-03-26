@@ -549,6 +549,19 @@ select.form-control {
     background-color: #0094c9;
     border: 2px solid #0094c9; }
 
+.btn3 {
+  font-family: 'OpenSans-SemiBold';
+  border: 2px solid #fcaa11;
+  padding: 12px 20px;
+  color: #fcaa11;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out; }
+  .btn3:hover {
+    color: #ffffff;
+    background-color: #fcaa11; }
+
 .btn-1 {
   color: #ffffff;
   background-color: #fcaa11;
