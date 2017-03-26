@@ -4,6 +4,19 @@ html, body{
 	margin: 0 auto;
 	padding: 0;
 }
+.containerCenter {
+	position: absolute;
+	overflow: hidden ;
+	top : 50% ;
+	left : 50% ;
+	transform: translate(-50%,-50%); ;
+}
+.navbar {
+	margin: 0px;
+}
+.navbar-nav li a:hover{
+	background : none;
+}
 
 /* --- Margin and Padding --- */
 @for $i from 1 through 6{
@@ -87,4 +100,60 @@ html, body{
 }
 .alignCenter {
 text-align: center;
+}
+
+/* --- KampungPreneurReset --- */
+.navbar {
+	background-color: aliceblue;
+}
+.navbar-brand {
+	height: 70px;
+}
+.navbar-nav {
+	padding: 5px 10px 10px;
+
+	&>li {
+		&>a {
+			color: $black;
+
+			&:hover {
+				color: $blue;
+				@include transition(0.3);
+
+				&:after {
+					width: 50%;
+					@include transition(0.3);
+				}
+			}
+
+			&:after {
+				content: "";
+				position: absolute;
+				width: 0%;
+				height: 3px;
+				background: $orange;
+				left: 50%;
+				bottom: 10%;
+				transform: translate(-50%);
+			}
+		}
+	}
+
+	.active {
+		a {
+			color: $blue;
+			@include transition(0.3);
+
+			&:after {
+				content: "";
+				position: absolute;
+				width: 50%;
+				height: 3px;
+				background: $orange;
+				left: 50%;
+				bottom: 10%;
+				transform: translate(-50%);
+			}
+		}
+	}
 }
