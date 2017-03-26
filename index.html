@@ -18,6 +18,7 @@
 	<link rel="stylesheet" type="text/css" href="./assets/css/loader.css">
 	<link rel="stylesheet" type="text/css" href="./assets/css/animate.css">
 	<link rel="stylesheet" type="text/css" href="./assets/css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="./assets/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="./assets/css/kampungpreneur-style.css">
 	
 	
@@ -47,7 +48,7 @@
 	    <div class="collapse navbar-collapse" id="Navbar">
 	      <ul class="nav navbar-nav navbar-right">
 	        <li class="active"><a href="#">BERANDA</a></li>
-	        <li><a href="#">TENTANG KAMI</a></li>
+	        <li><a href="#about">TENTANG KAMI</a></li>
 	        <li><a href="#">PENDAMPINGAN</a></li>
 	        <li><a href="#">BANTUAN MODAL</a></li>
 	        <li><a href="#">USAHA KAMI</a></li>
@@ -66,6 +67,7 @@
 			<div class="container containerCenter wh alignCenter">
 				<div class="col-md-8 col-sm-12 col-xs-12 beCenter">
 					<h1>LOREM IPSUM DOLOR SIT AMET</h1>
+					<hr class="hrTitle">
 					<span>
 						<p class="normal mg-b-20">
 							Lorem ipsum dolor sit amet, eos at nobis expetendis, nec cu wisi summo fastidii. Cu dicit habemus has, duo id suas autem nominati, sit id homero essent eleifend.
@@ -74,6 +76,72 @@
 					</span>
 				</div>
 			</div>
+			<div class="bottomArrow">
+				<a href="#about">
+					<i class="fa fa-chevron-down"></i>
+				</a>
+			</div>
+	</div>
+</section>
+
+<!-- About -->
+<section id="about">
+	<div class="container-fluid areaContainer">
+		<h2 class="h2-title">TENTANG KAMPUNG PRENEUR</h2>
+		<hr class="hrTitle">
+		<section class="row">
+			<div class="col-md-offset-3 col-md-6">
+				<p class="alignCenter normal">
+					Quod fierent torquatos no sit. Mundi blandit suscipiantur per an, et duis atqui rationibus quo. Oblique labores vix at, cu modus veritus ius. In dicant legendos complectitur duo. Labitur legimus ex mea, graecis intellegat pri ex.
+				</p>
+			</div>
+		</section>
+		<section class="row mg-t-30">
+			<div class="col-md-offset-2 col-md-8">
+				<section class="row">
+					<div class="col-md-4 pd-lr-20">
+						<section class="services">
+							<figure>
+								<img src="./assets/img/coach.png">
+							</figure>
+							<h4 class="sourceSansSemiBold">PENDAMPINGAN</h4>
+							<p class="pd-lr-10 alignCenter normal sourceSansRegular">
+								Et nec postea constituto, et sale voluptua persequeris sea. Eos case persequeris neglegentur at, cu quem clita eam.
+							</p>
+						</section>
+					</div>
+					<div class="col-md-4 pd-lr-20">
+						<section class="services">
+							<figure>
+								<img src="./assets/img/invest.png">
+							</figure>
+							<h4 class="sourceSansSemiBold">BANTUAN MODAL</h4>
+							<p class="pd-lr-10 alignCenter normal sourceSansRegular">
+								Et nec postea constituto, et sale voluptua persequeris sea. Eos case persequeris neglegentur at, cu quem clita eam.
+							</p>
+						</section>
+					</div>
+					<div class="col-md-4 pd-lr-20">
+						<section class="services">
+							<figure>
+								<img src="./assets/img/store.png">
+							</figure>
+							<h4 class="sourceSansSemiBold">PEMASARAN</h4>
+							<p class="pd-lr-10 alignCenter normal sourceSansRegular">
+								Et nec postea constituto, et sale voluptua persequeris sea. Eos case persequeris neglegentur at, cu quem clita eam.
+							</p>
+						</section>
+					</div>
+				</section>
+			</div>
+		</section>
+	</div>
+</section>
+
+<!-- About - Select 'Desa' -->
+<section id="pilihDesa">
+	<div class="container-fluid areaContainer">
+	Nih yang kedua
 	</div>
 </section>
 
@@ -81,6 +149,23 @@
 <script type="text/javascript">
 	$(document).ready(function(){
 	    
+				// to ease when click '#' url
+				$(function() {
+		            $('a[href*=#]:not([href=#])').click(function() {
+		                if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+
+		                    var target = $(this.hash);
+		                    target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+		                    if (target.length) {
+		                        $('html,body').animate({
+		                            scrollTop: target.offset().top
+		                        }, 1000);
+		                        return false;
+		                    }
+		                }
+		            });
+		        });
+
 	});
 </script>
 

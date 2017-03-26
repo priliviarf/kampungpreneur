@@ -68,6 +68,19 @@ $black: #282828;
  	}
  }
 
+/* Heading Style */
+.h2-title {
+	text-align: center;
+	font-family: 'OpenSans-SemiBold';
+}
+.areaContainer {
+	padding-top: 78px;
+	min-height: 100vh;
+}
+.hrTitle {
+    width: 80px;
+    border: solid 2px $orange;
+}
  /* ================== Header =====================*/
  .headerCover {
  	width: 100%;
@@ -81,15 +94,21 @@ $black: #282828;
  	.overlay {
  		@include overlay($black,0.8);
  	}
+ }
+ .bottomArrow {
+ 	position: absolute;
+ 	bottom: 5%;
+ 	left: 50%;
+    transform: translate(-50%);
 
- 	h1:after {
- 		content: "";
- 		position: absolute;
- 		width: 10%;
- 		height: 3px;
- 		background: $orange;
- 		left: 50%;
- 		bottom: 2.3em;
- 		transform: translate(-50%);
- 	}
+    a {
+    	color: $white;
+    }
+ }
+ /* ================== About =====================*/
+ .services {
+ 	border-top: 3px solid $lightgray;
+ 	border-bottom: 3px solid $lightgray;
+ 	text-align: center;
+ 	padding: 20px 0;
  }

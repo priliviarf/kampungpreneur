@@ -10,42 +10,42 @@
 /* --- Font assets for KampungPreneur --- */
 @font-face {
   font-family: "SourceSansPro-Bold";
-  src: url("../font/SourceSansPro-Bold.eot?#iefix") format("embedded-opentype"), url("../font/SourceSansPro-Bold.ttf") format("truetype"), url("../font/SourceSansPro-Bold.ttf.woff") format("woff");
+  src: url("../fonts/SourceSansPro-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/SourceSansPro-Bold.ttf") format("truetype"), url("../fonts/SourceSansPro-Bold.ttf.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 @font-face {
   font-family: "SourceSansPro-Light";
-  src: url("../font/SourceSansPro-Light.eot?#iefix") format("embedded-opentype"), url("../font/SourceSansPro-Light.ttf") format("truetype"), url("../font/SourceSansPro-Light.ttf.woff") format("woff");
+  src: url("../fonts/SourceSansPro-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/SourceSansPro-Light.ttf") format("truetype"), url("../fonts/SourceSansPro-Light.ttf.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 @font-face {
   font-family: "SourceSansPro-Regular";
-  src: url("../font/SourceSansPro-Regular.eot?#iefix") format("embedded-opentype"), url("../font/SourceSansPro-Regular.ttf") format("truetype"), url("../font/SourceSansPro-Regular.ttf.woff") format("woff");
+  src: url("../fonts/SourceSansPro-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/SourceSansPro-Regular.ttf") format("truetype"), url("../fonts/SourceSansPro-Regular.ttf.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 @font-face {
   font-family: "SourceSansPro-Semibold";
-  src: url("../font/SourceSansPro-Semibold.eot?#iefix") format("embedded-opentype"), url("../font/SourceSansPro-Semibold.ttf") format("truetype"), url("../font/SourceSansPro-Semibold.ttf.woff") format("woff");
+  src: url("../fonts/SourceSansPro-Semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/SourceSansPro-Semibold.ttf") format("truetype"), url("../fonts/SourceSansPro-Semibold.ttf.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 @font-face {
   font-family: "OpenSans-Bold";
-  src: url("../font/OpenSans-Bold.ttf") format("truetype");
+  src: url("../fonts/OpenSans-Bold.ttf") format("truetype");
   font-weight: normal;
   font-style: normal; }
 @font-face {
   font-family: "OpenSans-Light";
-  src: url("../font/OpenSans-Light.ttf") format("truetype");
+  src: url("../fonts/OpenSans-Light.ttf") format("truetype");
   font-weight: normal;
   font-style: normal; }
 @font-face {
   font-family: "OpenSans-Regular";
-  src: url("../font/OpenSans-Regular.ttf") format("truetype");
+  src: url("../fonts/OpenSans-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal; }
 @font-face {
   font-family: "OpenSans-SemiBold";
-  src: url("../font/OpenSans-SemiBold.ttf") format("truetype");
+  src: url("../fonts/OpenSans-SemiBold.ttf") format("truetype");
   font-weight: normal;
   font-style: normal; }
 .sourceSansBold {
@@ -98,6 +98,11 @@ html, body {
   margin: 0 auto;
   padding: 0; }
 
+figure {
+  margin-top: 0px; }
+  figure > img {
+    width: 100%; }
+
 .containerCenter {
   position: absolute;
   overflow: hidden;
@@ -112,7 +117,7 @@ html, body {
 .navbar {
   margin: 0px; }
 
-.navbar-nav li a:hover {
+.navbar-nav li a:hover, .navbar-nav li a:focus, .navbar-nav li a:active {
   background: none; }
 
 /* --- Margin and Padding --- */
@@ -430,7 +435,7 @@ h1 {
 
 /* --- KampungPreneurReset --- */
 .navbar {
-  background-color: aliceblue; }
+  background-color: #ffffff; }
 
 .navbar-brand {
   height: 70px; }
@@ -469,7 +474,7 @@ h1 {
     .navbar-nav .active a:after {
       content: "";
       position: absolute;
-      width: 50%;
+      width: 0%;
       height: 3px;
       background: #fcaa11;
       left: 50%;
@@ -496,6 +501,19 @@ h1 {
     color: #0094c9;
     background-color: #ffffff; }
 
+/* Heading Style */
+.h2-title {
+  text-align: center;
+  font-family: 'OpenSans-SemiBold'; }
+
+.areaContainer {
+  padding-top: 78px;
+  min-height: 100vh; }
+
+.hrTitle {
+  width: 80px;
+  border: solid 2px #fcaa11; }
+
 /* ================== Header =====================*/
 .headerCover {
   width: 100%;
@@ -515,14 +533,20 @@ h1 {
     padding: 0;
     top: 0;
     left: 0; }
-  .headerCover h1:after {
-    content: "";
-    position: absolute;
-    width: 10%;
-    height: 3px;
-    background: #fcaa11;
-    left: 50%;
-    bottom: 2.3em;
-    transform: translate(-50%); }
+
+.bottomArrow {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translate(-50%); }
+  .bottomArrow a {
+    color: #ffffff; }
+
+/* ================== About =====================*/
+.services {
+  border-top: 3px solid #cccccc;
+  border-bottom: 3px solid #cccccc;
+  text-align: center;
+  padding: 20px 0; }
 
 /*# sourceMappingURL=kampungpreneur-style.css.map */

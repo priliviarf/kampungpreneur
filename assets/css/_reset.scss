@@ -4,6 +4,12 @@ html, body{
 	margin: 0 auto;
 	padding: 0;
 }
+figure {
+	margin-top:0px;
+	&>img {
+		width: 100%;
+	}
+}
 .containerCenter {
 	position: absolute;
 	overflow: hidden ;
@@ -18,8 +24,10 @@ html, body{
 .navbar {
 	margin: 0px;
 }
-.navbar-nav li a:hover{
-	background : none;
+.navbar-nav li a{
+	&:hover,&:focus,&:active{
+		background : none;
+	}
 }
 
 /* --- Margin and Padding --- */
@@ -119,7 +127,7 @@ h1 {
 
 /* --- KampungPreneurReset --- */
 .navbar {
-	background-color: aliceblue;
+	background-color: $white;
 }
 .navbar-brand {
 	height: 70px;
@@ -162,7 +170,7 @@ h1 {
 			&:after {
 				content: "";
 				position: absolute;
-				width: 50%;
+				width: 0%;
 				height: 3px;
 				background: $orange;
 				left: 50%;
