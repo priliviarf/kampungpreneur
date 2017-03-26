@@ -36,12 +36,48 @@
 	font-style: normal;
 }
 
+@font-face{
+	font-family: 'OpenSans-Bold' ;
+	src : url('../font/OpenSans-Bold.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face{
+	font-family: 'OpenSans-Light' ;
+	src : url('../font/OpenSans-Light.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face{
+	font-family: 'OpenSans-Regular' ;
+	src : url('../font/OpenSans-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face{
+	font-family: 'OpenSans-SemiBold' ;
+	src : url('../font/OpenSans-SemiBold.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
 .sourceSansBold {
 	font-family : 'SourceSansPro-Bold' !important;
 }
 
 .sourceSansLight {
 	font-family : 'SourceSansPro-Light' !important;
+}
+
+.sourceSansRegular {
+	font-family : 'SourceSansPro-Regular' !important;
+}
+
+.sourceSansSemiBold {
+	font-family : 'SourceSansPro-SemiBold' !important;
 }
 
 .sourceSansRegular {

@@ -40,7 +40,7 @@ $black: #282828;
 }
 
 @mixin button($color,$border){
-	font-family: 'SourceSansPro-Regular';
+	font-family: 'OpenSans-SemiBold';
 	border: 1px solid $border;
 	padding: 12px 20px;
 	color: $color;
@@ -52,7 +52,7 @@ $black: #282828;
 
  /* -------------------------------------------- KampungPreneurStyle ---------------------------------------------------------- */
  .navbar {
- 	font-family : 'SourceSansPro-Bold';
+ 	font-family : 'OpenSans-Bold';
  }
  .navbar-brand {
  	&>img {
@@ -89,7 +89,7 @@ $black: #282828;
  		height: 3px;
  		background: $orange;
  		left: 50%;
- 		bottom: 2.5em;
+ 		bottom: 2.3em;
  		transform: translate(-50%);
  	}
  }

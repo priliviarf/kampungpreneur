@@ -28,11 +28,37 @@
   src: url("../font/SourceSansPro-Semibold.eot?#iefix") format("embedded-opentype"), url("../font/SourceSansPro-Semibold.ttf") format("truetype"), url("../font/SourceSansPro-Semibold.ttf.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
+@font-face {
+  font-family: "OpenSans-Bold";
+  src: url("../font/OpenSans-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: "OpenSans-Light";
+  src: url("../font/OpenSans-Light.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: "OpenSans-Regular";
+  src: url("../font/OpenSans-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: "OpenSans-SemiBold";
+  src: url("../font/OpenSans-SemiBold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
 .sourceSansBold {
   font-family: 'SourceSansPro-Bold' !important; }
 
 .sourceSansLight {
   font-family: 'SourceSansPro-Light' !important; }
+
+.sourceSansRegular {
+  font-family: 'SourceSansPro-Regular' !important; }
+
+.sourceSansSemiBold {
+  font-family: 'SourceSansPro-SemiBold' !important; }
 
 .sourceSansRegular {
   font-family: 'SourceSansPro-Regular' !important; }
@@ -68,7 +94,7 @@
 
 /* --- Common reset --- */
 html, body {
-  font-family: 'SourceSansPro-Light';
+  font-family: 'OpenSans-Light';
   margin: 0 auto;
   padding: 0; }
 
@@ -452,13 +478,13 @@ h1 {
 
 /* -------------------------------------------- KampungPreneurStyle ---------------------------------------------------------- */
 .navbar {
-  font-family: 'SourceSansPro-Bold'; }
+  font-family: 'OpenSans-Bold'; }
 
 .navbar-brand > img {
   height: 100%; }
 
 .btn1 {
-  font-family: 'SourceSansPro-Regular';
+  font-family: 'OpenSans-SemiBold';
   border: 1px solid #ffffff;
   padding: 12px 20px;
   color: #ffffff;
@@ -496,7 +522,7 @@ h1 {
     height: 3px;
     background: #fcaa11;
     left: 50%;
-    bottom: 2.5em;
+    bottom: 2.3em;
     transform: translate(-50%); }
 
 /*# sourceMappingURL=kampungpreneur-style.css.map */
