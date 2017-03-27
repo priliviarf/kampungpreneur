@@ -545,6 +545,132 @@
 	</div>
 </section>
 
+<!-- Countdown -->
+<section id="countdown">
+	<div class="features pd-b-30" style="background-image: url('./assets/img/wallpaper3.jpg');">
+		<div class="overlay"></div>
+		<div class="container wh alignCenter pd-bt-20">
+			<div class="col-md-3 pd-lr-30">
+				<span>
+					<h1><i class="fa fa-handshake-o"></i></h1>
+					<h2><span class="count">300</span>jt+</h2>
+					<p class="big pd-lr-30 mg-b-20">
+						Bantuan modal diberikan
+					</p>
+				</span>
+			</div>
+			<div class="col-md-3 pd-lr-30">
+				<span>
+					<h1><i class="fa fa-users"></i></h1>
+					<h2><span class="count">450</span>+</h2>
+					<p class="big pd-lr-30 mg-b-20">
+						Wirausahawan terdaftar
+					</p>
+				</span>
+			</div>
+			<div class="col-md-3 pd-lr-30">
+				<span>
+					<h1><i class="fa fa-suitcase"></i></h1>
+					<h2><span class="count">20</span></h2>
+					<p class="big pd-lr-30 mg-b-20">
+						Unit usaha dikembangkan
+					</p>
+				</span>
+			</div>
+			<div class="col-md-3 pd-lr-30">
+				<span>
+					<h1><i class="fa fa-child"></i></h1>
+					<h2><span class="count">3500</span>+</h2>
+					<p class="big pd-lr-30 mg-b-20">
+						Orang menerima manfaatkan
+					</p>
+				</span>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- Testimonial -->
+<section id="testimonial">
+	<div class="container-fluid areaContainer">
+		<h2 class="h2-title">Testimonal</h2>
+		<hr class="hrTitle">
+		<section class="row mg-b-30">
+			<div class="col-md-offset-3 col-md-6">
+				<p class="alignCenter small">
+					Apa yang mereka katakan tentang kami?
+				</p>
+			</div>
+		</section>
+		<section class="row mg-t-30">
+			<div class="col-md-offset-2 col-md-8 pd-lr-20">
+				<div class="owl-carousel owl-theme carousel-3 testi">
+				    <div class="item">
+				    	<section class="row">
+				    		<div class="col-md-2">
+				    			<figure>
+				    				<img src="./assets/img/bg.png" style="background-image: url('./assets/img/gallery3.jpg');">
+				    			</figure>
+				    		</div>
+				    		<div class="col-md-10">
+				    			<p class="gray">
+				    				Quod fierent torquatos no sit. Mundi blandit suscipiantur per an, et duis atqui rationibus quo. 	    				Oblique labores vix at, cu modus veritus ius. In dicant legendos complectitur duo. Labitur legimus ex mea, graecis intellegat pri ex.
+				    			</p>
+				    			<p class="noMag or openSansSemiBold big">
+				    				John Lennon
+				    			</p>
+				    			<p class="openSansSemiBold">
+				    				Entrepeneur
+				    			</p>
+				    		</div>
+				    	</section>
+				    </div>
+				    <div class="item">
+				    	<section class="row">
+				    		<div class="col-md-2">
+				    			<figure>
+				    				<img src="./assets/img/bg.png" style="background-image: url('./assets/img/gallery1.jpg');">
+				    			</figure>
+				    		</div>
+				    		<div class="col-md-10">
+				    			<p class="gray">
+				    				Quod fierent torquatos no sit. Mundi blandit suscipiantur per an, et duis atqui rationibus quo. 	    				Oblique labores vix at, cu modus veritus ius. In dicant legendos complectitur duo. Labitur legimus ex mea, graecis intellegat pri ex.
+				    			</p>
+				    			<p class="noMag or openSansSemiBold big">
+				    				John Lennon
+				    			</p>
+				    			<p class="openSansSemiBold">
+				    				Entrepeneur
+				    			</p>
+				    		</div>
+				    	</section>
+				    </div>
+				    <div class="item">
+				    	<section class="row">
+				    		<div class="col-md-2">
+				    			<figure>
+				    				<img src="./assets/img/bg.png" style="background-image: url('./assets/img/gallery2.jpg');">
+				    			</figure>
+				    		</div>
+				    		<div class="col-md-10">
+				    			<p class="gray">
+				    				Quod fierent torquatos no sit. Mundi blandit suscipiantur per an, et duis atqui rationibus quo. 	    				Oblique labores vix at, cu modus veritus ius. In dicant legendos complectitur duo. Labitur legimus ex mea, graecis intellegat pri ex.
+				    			</p>
+				    			<p class="noMag or openSansSemiBold big">
+				    				John Lennon
+				    			</p>
+				    			<p class="openSansSemiBold">
+				    				Entrepeneur
+				    			</p>
+				    		</div>
+				    	</section>
+				    </div>
+				</div>
+			</div>
+		</section>
+	</div>
+</section>
+
 <!-- JAVASCRIPT HERE -->
 <script type="text/javascript">
 	$(document).ready(function(){
@@ -610,6 +736,29 @@
 		        }
 		    }
 		})
+
+		var owl2 = $('.carousel-3');
+		owl2.owlCarousel({
+		    items:1,
+		    loop:true,
+		    margin:10,
+		    autoplay:true,
+		    autoplayTimeout:5000,
+		    autoplayHoverPause:true
+		});
+
+		//count
+		$('.count').each(function () {
+		    $(this).prop('Counter',0).animate({
+		        Counter: $(this).text()
+		    }, {
+		        duration: 2000,
+		        easing: 'swing',
+		        step: function (now) {
+		            $(this).text(Math.ceil(now));
+		        }
+		    });
+		});
 
 	});
 </script>

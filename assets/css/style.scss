@@ -16,6 +16,7 @@ $darkorange : #e67e22;
 $white : #ffffff;
 $flatwhite: #f7f7f7;
 $lightgray : #cccccc;
+$gray: #918c8c;
 $black: #282828;
 
 @mixin transition($time){
@@ -26,10 +27,10 @@ $black: #282828;
 }
 
 @mixin radius($rad){
-	border-radius: $rad*1px ;
-	-webkit-border-radius: $rad*1px ;
-	-moz-border-radius: $rad*1px ;
-	-o-border-radius: $rad*1px ;
+	border-radius: $rad ;
+	-webkit-border-radius: $rad ;
+	-moz-border-radius: $rad ;
+	-o-border-radius: $rad ;
 }
 @mixin overlay($color,$opa){
 	width : 100% ;
@@ -234,5 +235,26 @@ $black: #282828;
  		.detailItem,.itemAction {
  			opacity: 1;
  		}
+ 	}
+ }
+ /* ================== COUNTDOWN =====================*/
+ #countdown {
+ 	.overlay{
+ 		@include overlay($darkorange,0.7);
+ 	}
+ }
+ /* ================== TESTIMONIAL =====================*/
+ #testimonial {
+ 	.areaContainer {
+ 		min-height: auto;
+ 		padding-bottom: 65px;
+ 	}
+ }
+ .testi {
+ 	padding: 20px;
+ 	border-left: 2px solid $lightgray;
+ 	border-right: 2px solid $lightgray;
+ 	img{
+ 		@include radius(100%);
  	}
  }
