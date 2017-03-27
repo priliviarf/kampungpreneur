@@ -10,6 +10,7 @@
  /*Color Pallete for Kampung Preneur*/
 $blue : #0094c9;
 $lightblue : #01acf3;
+$lightorange : #fbb737;
 $orange : #fcaa11;
 $darkorange : #e67e22;
 $white : #ffffff;
@@ -109,7 +110,7 @@ $black: #282828;
 }
 
 .areaContainer {
-	padding-top: 78px;
+	padding-top: 65px;
 	min-height: 100vh;
 }
 .hrTitle {
@@ -125,7 +126,6 @@ $black: #282828;
  .headerCover {
  	width: 100%;
  	height: 100vh;
- 	background: url('../img/wallpaper.jpg');
  	@include img-bg();
  	background-attachment: fixed;
 
@@ -178,11 +178,61 @@ $black: #282828;
  /* ================== FEATURES/PENDAMPINGAN =====================*/
  .features {
  	position: relative;
- 	background: url('../img/wallpaper.jpg');
  	@include img-bg();
  	background-attachment: fixed;
 
  	.overlay{
  		@include overlay($black,0.8);
+ 	}
+ }
+ /* ================== STORE =====================*/
+ .storeItem{
+ 	position: relative;
+ 	overflow: hidden;
+ 	cursor: pointer;
+
+ 	.overlay{
+ 		@include overlay($blue,0.9);
+ 		height: 0%;
+ 		@include transition(0.5);
+ 	}
+
+ 	.detailItem {
+ 		opacity: 0;
+ 		color: $white;
+ 		text-align: center;
+ 		@include transition(0.7);
+ 		a{
+ 			color: $white;
+ 		}
+ 	}
+
+ 	.itemAction {
+ 		position: absolute;
+	    bottom: 0;
+	    width: 100%;
+	    padding: 20px;
+	    opacity: 0;
+	    @include transition(0.6);
+
+ 		.buy {
+ 			text-align: left;
+ 		}
+
+ 		.detail {
+ 			text-align: right;
+ 		}
+
+ 		a {
+ 			color: $white;
+ 		}
+ 	}
+ 	&:hover {
+ 		.overlay {
+ 			height: 100%;
+ 		}
+ 		.detailItem,.itemAction {
+ 			opacity: 1;
+ 		}
  	}
  }

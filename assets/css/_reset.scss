@@ -125,7 +125,7 @@ h1 {
 	font-family: 'SourceSansPro-Bold';
 }
 h2 {
-	font-size: 3em;
+	font-size: 2.4em;
 	font-family: 'SourceSansPro-Bold';
 }
 
@@ -208,3 +208,6 @@ select.form-control {
 }
 .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
   background: $blue !important; }
+.owl-prev,.owl-next {
+	display: none !important;
+}

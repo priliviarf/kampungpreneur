@@ -79,6 +79,9 @@
 .or {
   color: #fcaa11 !important; }
 
+.lightor {
+  color: #fbb737 !important; }
+
 .black {
   color: #282828 !important; }
 
@@ -439,7 +442,7 @@ h1 {
   font-family: 'SourceSansPro-Bold'; }
 
 h2 {
-  font-size: 3em;
+  font-size: 2.4em;
   font-family: 'SourceSansPro-Bold'; }
 
 /* --- Button --- */
@@ -515,6 +518,9 @@ select.form-control {
 .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
   background: #0094c9 !important; }
 
+.owl-prev, .owl-next {
+  display: none !important; }
+
 /* -------------------------------------------- KampungPreneurStyle ---------------------------------------------------------- */
 .navbar {
   font-family: 'OpenSans-Bold'; }
@@ -583,7 +589,7 @@ select.form-control {
   color: #fcaa11; }
 
 .areaContainer {
-  padding-top: 78px;
+  padding-top: 65px;
   min-height: 100vh; }
 
 .hrTitle {
@@ -599,7 +605,6 @@ select.form-control {
 .headerCover {
   width: 100%;
   height: 100vh;
-  background: url("../img/wallpaper.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -652,7 +657,6 @@ select.form-control {
 /* ================== FEATURES/PENDAMPINGAN =====================*/
 .features {
   position: relative;
-  background: url("../img/wallpaper.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -663,5 +667,52 @@ select.form-control {
     background: #282828;
     opacity: 0.8;
     position: absolute; }
+
+/* ================== STORE =====================*/
+.storeItem {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer; }
+  .storeItem .overlay {
+    width: 100%;
+    height: 100%;
+    background: #0094c9;
+    opacity: 0.9;
+    position: absolute;
+    height: 0%;
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out; }
+  .storeItem .detailItem {
+    opacity: 0;
+    color: #ffffff;
+    text-align: center;
+    transition: all 0.7s ease-in-out;
+    -webkit-transition: all 0.7s ease-in-out;
+    -moz-transition: all 0.7s ease-in-out;
+    -o-transition: all 0.7s ease-in-out; }
+    .storeItem .detailItem a {
+      color: #ffffff; }
+  .storeItem .itemAction {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 20px;
+    opacity: 0;
+    transition: all 0.6s ease-in-out;
+    -webkit-transition: all 0.6s ease-in-out;
+    -moz-transition: all 0.6s ease-in-out;
+    -o-transition: all 0.6s ease-in-out; }
+    .storeItem .itemAction .buy {
+      text-align: left; }
+    .storeItem .itemAction .detail {
+      text-align: right; }
+    .storeItem .itemAction a {
+      color: #ffffff; }
+  .storeItem:hover .overlay {
+    height: 100%; }
+  .storeItem:hover .detailItem, .storeItem:hover .itemAction {
+    opacity: 1; }
 
 /*# sourceMappingURL=kampungpreneur-style.css.map */
