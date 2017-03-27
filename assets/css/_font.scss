@@ -64,6 +64,9 @@
 	font-style: normal;
 }
 
+.openSansRegular {
+	font-family: 'OpenSans-Regular' !important;
+}
 .openSansSemiBold {
 	font-family: 'OpenSans-SemiBold' !important;
 }
@@ -105,7 +108,7 @@
 	color: $lightorange !important;
 }
 .gray {
-	color: $gray;
+	color: $gray !important;
 }
 .black{
 	color: $black !important;

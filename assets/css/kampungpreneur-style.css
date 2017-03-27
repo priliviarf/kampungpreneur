@@ -48,6 +48,9 @@
   src: url("../fonts/OpenSans-SemiBold.ttf") format("truetype");
   font-weight: normal;
   font-style: normal; }
+.openSansRegular {
+  font-family: 'OpenSans-Regular' !important; }
+
 .openSansSemiBold {
   font-family: 'OpenSans-SemiBold' !important; }
 
@@ -83,7 +86,7 @@
   color: #fbb737 !important; }
 
 .gray {
-  color: #918c8c; }
+  color: #918c8c !important; }
 
 .black {
   color: #282828 !important; }
@@ -117,6 +120,9 @@ figure {
 
 a:hover {
   text-decoration: none; }
+
+li {
+  list-style-type: none; }
 
 .containerCenter {
   position: absolute;
@@ -424,10 +430,10 @@ a:hover {
 
 /* --- Float --- */
 .floatLeft {
-  float: left; }
+  float: left !important; }
 
 .floatRight {
-  float: right; }
+  float: right !important; }
 
 /* --- align --- */
 .alignLeft {
@@ -516,7 +522,7 @@ select.form-control {
   background-position: center; }
 
 .owl-theme .owl-dots .owl-dot span {
-  background: #cccccc !important; }
+  background: #ebebeb !important; }
 
 .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
   background: #0094c9 !important; }
@@ -546,7 +552,7 @@ select.form-control {
 
 .btn2 {
   font-family: 'OpenSans-SemiBold';
-  border: 2px solid #cccccc;
+  border: 2px solid #ebebeb;
   padding: 12px 20px;
   color: #0094c9;
   transition: all 0.5s ease-in-out;
@@ -629,8 +635,8 @@ select.form-control {
 
 /* ================== About =====================*/
 .services {
-  border-top: 3px solid #cccccc;
-  border-bottom: 3px solid #cccccc;
+  border-top: 3px solid #ebebeb;
+  border-bottom: 3px solid #ebebeb;
   text-align: center;
   padding: 20px 0; }
 
@@ -653,7 +659,7 @@ select.form-control {
     background-position: center; }
 
 .date {
-  color: #cccccc;
+  color: #ebebeb;
   font-size: 0.8em;
   font-family: 'OpenSans-Regular'; }
 
@@ -733,12 +739,64 @@ select.form-control {
 
 .testi {
   padding: 20px;
-  border-left: 2px solid #cccccc;
-  border-right: 2px solid #cccccc; }
+  border-left: 2px solid #ebebeb;
+  border-right: 2px solid #ebebeb; }
   .testi img {
     border-radius: 100%;
     -webkit-border-radius: 100%;
     -moz-border-radius: 100%;
-    -o-border-radius: 100%; }
+    -o-border-radius: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; }
+
+/* ================== FOOTER =====================*/
+footer {
+  background-color: #ebebeb; }
+  footer h4 {
+    font-size: 1.2em; }
+  footer img {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; }
+  footer li {
+    list-style-type: none;
+    padding-bottom: 10px; }
+    footer li a {
+      font-family: 'OpenSans-SemiBold';
+      color: #0094c9;
+      transition: all 0.3s ease-in-out;
+      -webkit-transition: all 0.3s ease-in-out;
+      -moz-transition: all 0.3s ease-in-out;
+      -o-transition: all 0.3s ease-in-out; }
+
+/* ================== COPYRIGHT =====================*/
+#copyright {
+  background-color: #0094c9;
+  color: #ffffff;
+  font-size: 0.8em; }
+
+.socialMedia {
+  text-align: right; }
+  .socialMedia li {
+    display: inline-block;
+    padding: 0 2px; }
+  .socialMedia a {
+    color: #ffffff;
+    font-size: 1.5em;
+    padding: 5px 10px;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out; }
+
+a.fb:hover {
+  background-color: #3b5999; }
+
+a.tw:hover {
+  background-color: #2ac6f7; }
+
+a.ig:hover {
+  background-color: #fb3958; }
 
 /*# sourceMappingURL=kampungpreneur-style.css.map */

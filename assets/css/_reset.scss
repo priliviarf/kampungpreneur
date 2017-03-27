@@ -15,6 +15,9 @@ a {
 		text-decoration: none;
 	}
 }
+li {
+	list-style-type: none;
+}
 .containerCenter {
 	position: absolute;
 	overflow: hidden ;
@@ -101,11 +104,11 @@ a {
 
 /* --- Float --- */
 .floatLeft {
-	float: left;
+	float: left !important;
 }
 
 .floatRight {
-	float: right;
+	float: right !important;
 }
 
 /* --- align --- */
