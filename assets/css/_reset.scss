@@ -145,62 +145,6 @@ select.form-control {
 }
 
 /* --- KampungPreneurReset --- */
-.navbar {
-	background-color: $white;
-}
-.navbar-brand {
-	height: 70px;
-}
-.navbar-nav {
-	padding: 5px 10px 10px;
-
-	&>li {
-		&>a {
-			color: $black;
-
-			&:hover {
-				color: $blue;
-				@include transition(0.3);
-
-				&:after {
-					width: 50%;
-					@include transition(0.3);
-				}
-			}
-
-			&:after {
-				content: "";
-				position: absolute;
-				width: 0%;
-				height: 3px;
-				background: $orange;
-				left: 50%;
-				bottom: 10%;
-				transform: translate(-50%);
-				@include transition(0.3);
-			}
-		}
-	}
-
-	.active {
-		a {
-			color: $blue;
-			@include transition(0.3);
-
-			&:after {
-				content: "";
-				position: absolute;
-				width: 0%;
-				height: 3px;
-				background: $orange;
-				left: 50%;
-				bottom: 10%;
-				transform: translate(-50%);
-			}
-		}
-	}
-}
-
 .owl-carousel{
 	img {
 		@include img-bg();

@@ -34,8 +34,8 @@
 <body>
 <!-- <div class="se-pre-con"></div> -->
 <!-- Navbar section -->
-<section id="navbar">
-	<nav class="navbar navbar-dafult navbar-fixed-top">
+<section>
+	<nav id="navbar" class="navbar navbar-dafult navbar-fixed-top">
 	  <div class="container-fluid">
 	    <div class="navbar-header">
 	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#Navbar">
@@ -56,8 +56,8 @@
 	        <li><a href="#">PENDAMPINGAN</a></li>
 	        <li><a href="#">BANTUAN MODAL</a></li>
 	        <li><a href="#store">USAHA KAMI</a></li>
-	        <li><a href="#">DAFTAR</a></li>
-	        <li><a href="#">MASUK</a></li>
+	        <li><a href="#"><i class="fa fa-user fa-lg"></i> DAFTAR</a></li>
+	        <li><a href="#"><i class="fa fa-sign-in fa-lg"></i> MASUK</a></li>
 	      </ul>
 	    </div>
 	  </div>
@@ -802,7 +802,16 @@
 <!-- JAVASCRIPT HERE -->
 <script type="text/javascript">
 	$(document).ready(function(){
-	    
+	    //navbar
+	    $(window).scroll(function(){
+	    	if($(window).scrollTop()){
+	    		$('#navbar').addClass('floatNav') ;
+	    	}else{
+	    		$('#navbar').removeClass('floatNav') ;
+	    	}
+	    }) ;
+
+
 		// to ease when click '#' url
 		$(function() {
             $('a[href*=#]:not([href=#])').click(function() {

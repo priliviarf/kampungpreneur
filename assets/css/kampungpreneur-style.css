@@ -465,57 +465,6 @@ select.form-control {
   border-radius: 0px; }
 
 /* --- KampungPreneurReset --- */
-.navbar {
-  background-color: #ffffff; }
-
-.navbar-brand {
-  height: 70px; }
-
-.navbar-nav {
-  padding: 5px 10px 10px; }
-  .navbar-nav > li > a {
-    color: #282828; }
-    .navbar-nav > li > a:hover {
-      color: #0094c9;
-      transition: all 0.3s ease-in-out;
-      -webkit-transition: all 0.3s ease-in-out;
-      -moz-transition: all 0.3s ease-in-out;
-      -o-transition: all 0.3s ease-in-out; }
-      .navbar-nav > li > a:hover:after {
-        width: 50%;
-        transition: all 0.3s ease-in-out;
-        -webkit-transition: all 0.3s ease-in-out;
-        -moz-transition: all 0.3s ease-in-out;
-        -o-transition: all 0.3s ease-in-out; }
-    .navbar-nav > li > a:after {
-      content: "";
-      position: absolute;
-      width: 0%;
-      height: 3px;
-      background: #fcaa11;
-      left: 50%;
-      bottom: 10%;
-      transform: translate(-50%);
-      transition: all 0.3s ease-in-out;
-      -webkit-transition: all 0.3s ease-in-out;
-      -moz-transition: all 0.3s ease-in-out;
-      -o-transition: all 0.3s ease-in-out; }
-  .navbar-nav .active a {
-    color: #0094c9;
-    transition: all 0.3s ease-in-out;
-    -webkit-transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out; }
-    .navbar-nav .active a:after {
-      content: "";
-      position: absolute;
-      width: 0%;
-      height: 3px;
-      background: #fcaa11;
-      left: 50%;
-      bottom: 10%;
-      transform: translate(-50%); }
-
 .owl-carousel img {
   background-size: cover;
   background-repeat: no-repeat;
@@ -609,6 +558,74 @@ select.form-control {
   max-width: 80px;
   margin: 10px 0;
   border: solid 2px #fcaa11; }
+
+/* ================== NavBar =====================*/
+#navbar {
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out; }
+
+.navbar-brand {
+  height: 70px; }
+
+.navbar-nav {
+  padding: 5px 10px 10px; }
+  .navbar-nav > li > a {
+    color: #ffffff; }
+    .navbar-nav > li > a:hover {
+      color: #0094c9;
+      transition: all 0.3s ease-in-out;
+      -webkit-transition: all 0.3s ease-in-out;
+      -moz-transition: all 0.3s ease-in-out;
+      -o-transition: all 0.3s ease-in-out; }
+      .navbar-nav > li > a:hover:after {
+        width: 50%;
+        transition: all 0.3s ease-in-out;
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out; }
+    .navbar-nav > li > a:after {
+      content: "";
+      position: absolute;
+      width: 0%;
+      height: 3px;
+      background: #fcaa11;
+      left: 50%;
+      bottom: 10%;
+      transform: translate(-50%);
+      transition: all 0.3s ease-in-out;
+      -webkit-transition: all 0.3s ease-in-out;
+      -moz-transition: all 0.3s ease-in-out;
+      -o-transition: all 0.3s ease-in-out; }
+  .navbar-nav .active a {
+    color: #0094c9;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out; }
+    .navbar-nav .active a:after {
+      content: "";
+      position: absolute;
+      width: 0%;
+      height: 3px;
+      background: #fcaa11;
+      left: 50%;
+      bottom: 10%;
+      transform: translate(-50%); }
+
+.floatNav {
+  background-color: #ffffff;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
+  -o-box-shadow: 0 0 4px rgba(0, 0, 0, 0.4); }
+  .floatNav .navbar-nav > li > a {
+    color: #282828; }
+    .floatNav .navbar-nav > li > a:hover {
+      color: #0094c9; }
+  .floatNav .navbar-nav .active a {
+    color: #0094c9; }
 
 /* ================== Header =====================*/
 .headerCover {
