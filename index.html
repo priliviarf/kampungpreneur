@@ -50,7 +50,7 @@
 	    </div>
 	    <div class="collapse navbar-collapse" id="Navbar">
 	      <ul class="nav navbar-nav navbar-right">
-	        <li class="active"><a href="#">BERANDA</a></li>
+	        <li class="active"><a href="#header">BERANDA</a></li>
 	        <li><a href="#about">TENTANG KAMI</a></li>
 	        <li><a href="#news">BERITA</a></li>
 	        <li><a href="#">PENDAMPINGAN</a></li>
@@ -809,6 +809,9 @@
 	    	}else{
 	    		$('#navbar').removeClass('floatNav') ;
 	    	}
+	    }) ;
+	    $('body').scrollspy({
+	    	target : '#navbar'
 	    }) ;
 
 
