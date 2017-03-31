@@ -29,6 +29,8 @@
 	<script type="text/javascript" src="./assets/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="./assets/js/loader.js"></script>
 	<script type="text/javascript" src="./assets/js/owl.carousel.js"></script>
+	<!-- <script type="text/javascript" src="./assets/js/wow.min.js"></script> -->
+	<script type="text/javascript" src="./assets/js/main.js"></script>
 	
 </head>
 <body>
@@ -763,6 +765,13 @@
 	</div>
 </section>
 
+<!-- Media Partner -->
+<section id="partner">
+	<div class="features pd-bt-20">
+		<h3 class="h3-spec alignCenter">PARTNER</h3>
+	</div>
+</section>
+
 <!-- Footer -->
 <footer>
 	<div class="container-fluid pd-30">
@@ -878,9 +887,10 @@
 		<section class="row">
 			<div class="floatRight col-md-6 socialMedia">
 				<ul class="noPad">
-					<li><a class="fb" href="#"><i class="fa fa-facebook"></i></a></li>
+					<li><a class="fb" href="#"><i class="fa fa-facebook-official"></i></a></li>
 					<li><a class="tw" href="#"><i class="fa fa-twitter"></i></a></li>
 					<li><a class="ig" href="#"><i class="fa fa-instagram"></i></a></li>
+					<li><a class="wA" href="#"><i class="fa fa-whatsapp"></i></a></li>
 				</ul>
 			</div>
 			<div class="floatRight col-md-6">
@@ -891,108 +901,9 @@
 	</div>
 </section>
 
-<!-- JAVASCRIPT HERE -->
+<!-- SOME JAVASCRIPT HERE -->
 <script type="text/javascript">
-	$(document).ready(function(){
-	    //navbar
-	    $(window).scroll(function(){
-	    	if($(window).scrollTop() > $('#navbar').innerHeight()){
-	    		$('#navbar').addClass('floatNav') ;
-	    	}else{
-	    		$('#navbar').removeClass('floatNav') ;
-	    	}
-	    }) ;
-	    $('body').scrollspy({
-	    	target : '#navbar'
-	    }) ;
-
-
-		// to ease when click '#' url
-		$(function() {
-            $('a[href*=#]:not([href=#])').click(function() {
-                if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-
-                    var target = $(this.hash);
-                    target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-                    if (target.length) {
-                        $('html,body').animate({
-                            scrollTop: target.offset().top
-                        }, 1000);
-                        return false;
-                    }
-                }
-            });
-        });
-
-		//owl carousel
-		var owl = $('.carousel-1');
-		owl.owlCarousel({
-		    items:3,
-		    loop:true,
-		    margin:10,
-		    autoplay:true,
-		    autoplayTimeout:5000,
-		    autoplayHoverPause:true
-		});
-
-		$('.carousel-1').owlCarousel({
-		    loop:true,
-		    margin:10,
-		    nav:true,
-		    responsive:{
-		        0:{
-		            items:1
-		        },
-		        600:{
-		            items:3
-		        },
-		        1000:{
-		            items:3
-		        }
-		    }
-		})
-
-		$('.carousel-2').owlCarousel({
-		    loop:true,
-		    margin:10,
-		    nav:true,
-		    responsive:{
-		        0:{
-		            items:1
-		        },
-		        600:{
-		            items:2
-		        },
-		        1000:{
-		            items:4
-		        }
-		    }
-		})
-
-		var owl2 = $('.carousel-3');
-		owl2.owlCarousel({
-		    items:1,
-		    loop:true,
-		    margin:10,
-		    autoplay:true,
-		    autoplayTimeout:5000,
-		    autoplayHoverPause:true
-		});
-
-		//count
-		$('.count').each(function () {
-		    $(this).prop('Counter',0).animate({
-		        Counter: $(this).text()
-		    }, {
-		        duration: 2000,
-		        easing: 'swing',
-		        step: function (now) {
-		            $(this).text(Math.ceil(now));
-		        }
-		    });
-		});
-
-	});
+	new WOW().init();
 </script>
 
 </body>

@@ -366,6 +366,8 @@ $black: #282828;
  		@include img-bg();
  	}
  }
+ /* ================== MEDIA PARTNER =====================*/
+ 
  /* ================== FOOTER =====================*/
  footer {
  	background-color: $lightgray;
@@ -415,4 +417,7 @@ $black: #282828;
  		}
  a.ig:hover{
  			background-color: #fb3958;
+ 		}
+ a.wA:hover{
+ 			background-color: #4dc247;
  		}

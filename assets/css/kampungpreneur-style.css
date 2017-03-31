@@ -788,6 +788,7 @@ button.navbar-toggle {
     background-repeat: no-repeat;
     background-position: center; }
 
+/* ================== MEDIA PARTNER =====================*/
 /* ================== FOOTER =====================*/
 footer {
   background-color: #ebebeb; }
@@ -836,5 +837,8 @@ a.tw:hover {
 
 a.ig:hover {
   background-color: #fb3958; }
+
+a.wA:hover {
+  background-color: #4dc247; }
 
 /*# sourceMappingURL=kampungpreneur-style.css.map */
