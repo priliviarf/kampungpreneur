@@ -137,6 +137,7 @@ $black: #282828;
 }
  /* ================== NavBar =====================*/
  #navbar{
+ 	padding: 0 20px;
  	@include transition(0.5);
  }
  .navbar-brand {
@@ -264,9 +265,23 @@ $black: #282828;
  	}
  }
  .date {
- 	color: $lightgray;
+ 	color: $gray;
  	font-size: 0.8em;
  	font-family: 'OpenSans-Regular';
+ }
+ /* ================== VIDEOS =====================*/
+ .videos {
+ 	padding:20px;
+ 	&>figure{
+ 		position: relative;
+
+ 		iframe {
+ 			position: absolute;
+ 			top: 0;
+ 			width: 100%;
+ 			height: 100%;
+ 		}
+ 	}
  }
  /* ================== FEATURES/PENDAMPINGAN =====================*/
  .features {

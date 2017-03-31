@@ -319,6 +319,61 @@
 	</div>
 </section>
 
+<!-- Video Section -->
+<section id="video">
+	<div class="container-fluid areaContainer">
+		<section class="row">
+			<div class="col-md-offset-1 col-md-10">
+				<h2 class="openSansSemiBold mg-t-10 mg-b-20">VIDEO KAMPUNG-PRENEUR</h2>
+				<hr class="hrSide">
+				<section class="row">
+					<div class="col-md-8">
+						<section class="videos">
+							<figure>
+								<img src="./assets/img/bg-video.png">
+								<iframe src="https://www.youtube.com/embed/e5iCqzKZLLY" frameborder="0" allowfullscreen></iframe>
+							</figure>
+							<!-- <h3 class="h3-spec">Lorem ipsum dolor sit amet</h3> -->
+						</section>
+					</div>
+					<div class="col-md-4">
+						<section class="row">
+							<div class="col-md-12">
+								<section class="videos">
+									<figure>
+										<img src="./assets/img/bg-video.png">
+										<iframe src="https://www.youtube.com/embed/e5iCqzKZLLY" frameborder="0" allowfullscreen></iframe>
+									</figure>
+									<!-- <h4 class="h4-spec">Lorem ipsum dolor sit amet</h4> -->
+								</section>
+							</div>
+						</section>
+						<section class="row">
+							<div class="col-md-12">
+								<section class="videos">
+									<figure>
+										<img src="./assets/img/bg-video.png">
+										<iframe src="https://www.youtube.com/embed/e5iCqzKZLLY" frameborder="0" allowfullscreen></iframe>
+									</figure>
+									<!-- <h4 class="h4-spec">Lorem ipsum dolor sit amet</h4> -->
+								</section>
+							</div>
+						</section>
+					</div>
+				</section>
+			</div>
+		</section>
+		<section class="row mg-bt-20">
+			<div class="alignCenter mg-b-20">
+				<a href="#" class="btn2">
+					<i class="fa fa-circle-o-notch fa-spin fa-fw"></i>
+					<span>VIDEO SELENGKAPNYA</span>
+				</a>
+			</div>
+		</section>
+	</div>
+</section>
+
 <!-- Features - Pendampingan -->
 <section id="pendampingan">
 	<div class="features pd-b-30" style="background-image: url('./assets/img/wallpaper1.jpeg');">
@@ -841,7 +896,7 @@
 	$(document).ready(function(){
 	    //navbar
 	    $(window).scroll(function(){
-	    	if($(window).scrollTop()){
+	    	if($(window).scrollTop() > $('#navbar').innerHeight()){
 	    		$('#navbar').addClass('floatNav') ;
 	    	}else{
 	    		$('#navbar').removeClass('floatNav') ;
