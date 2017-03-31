@@ -136,7 +136,8 @@ li {
   margin: auto; }
 
 .navbar {
-  margin: 0px; }
+  margin: 0px;
+  font-size: 0.85em; }
 
 .navbar-nav li a:hover, .navbar-nav li a:focus, .navbar-nav li a:active {
   background: none; }
@@ -451,7 +452,7 @@ h1 {
   font-family: 'SourceSansPro-Bold'; }
 
 h2 {
-  font-size: 2.4em;
+  font-size: 2em;
   font-family: 'SourceSansPro-Bold'; }
 
 /* --- Button --- */
@@ -559,6 +560,10 @@ button.navbar-toggle {
 .hrTitle {
   width: 80px;
   border: solid 2px #fcaa11; }
+
+.hrTitle2 {
+  width: 50px;
+  border: solid 1px #ebebeb; }
 
 .hrSide {
   max-width: 80px;
@@ -789,6 +794,15 @@ button.navbar-toggle {
     background-position: center; }
 
 /* ================== MEDIA PARTNER =====================*/
+.partner a img {
+  filter: grayscale(1);
+  transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out; }
+.partner a:hover img {
+  filter: grayscale(0); }
+
 /* ================== FOOTER =====================*/
 footer {
   background-color: #ebebeb; }

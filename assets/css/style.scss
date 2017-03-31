@@ -130,6 +130,10 @@ $black: #282828;
     width: 80px;
     border: solid 2px $orange;
 }
+.hrTitle2 {
+    width: 50px;
+    border: solid 1px $lightgray;
+}
 .hrSide {
 	max-width: 80px;
 	margin: 10px 0;
@@ -367,7 +371,23 @@ $black: #282828;
  	}
  }
  /* ================== MEDIA PARTNER =====================*/
- 
+ .partner {
+
+ 	a{
+
+ 		img {
+ 			filter:grayscale(1);
+ 			@include transition(0.4);
+ 		}
+
+ 	}
+ 	
+ 	a:hover{
+ 		img{
+ 			filter:grayscale(0);
+ 		}
+ 	}
+ }
  /* ================== FOOTER =====================*/
  footer {
  	background-color: $lightgray;
