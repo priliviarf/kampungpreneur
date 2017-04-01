@@ -32,7 +32,17 @@
 		//owl carousel
 		var owl = $('.carousel-1');
 		owl.owlCarousel({
-		    items:3,
+		    responsive:{
+		        0:{
+		            items:1
+		        },
+		        600:{
+		            items:3
+		        },
+		        1000:{
+		            items:3
+		        }
+		    },
 		    loop:true,
 		    margin:10,
 		    autoplay:true,
@@ -49,7 +59,7 @@
 		            items:1
 		        },
 		        600:{
-		            items:3
+		            items:1
 		        },
 		        1000:{
 		            items:3

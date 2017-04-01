@@ -1,0 +1,138 @@
+@media screen and (max-width: 1196px) {
+	h1{
+		font-size: 2.5em;
+	}
+	.navbar-brand	{
+		height: 60px;
+	}
+}
+@media screen and (max-width: 1028px) {
+	.small {
+		font-size: 0.7em;
+	}
+	.normal{
+		font-size: 0.9em;
+	}
+	.big {
+		font-size: 1em;
+	}
+	/*----------Navbar--------------*/
+	.navbar-header {
+	        float: none;
+	    }
+	    .navbar-left,.navbar-right {
+	        float: none !important;
+	    }
+	    .navbar-toggle {
+	        display: block;
+	    }
+	    .navbar-collapse {
+	        border-top: 1px solid transparent;
+	        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+	    }
+	    .navbar-fixed-top {
+	        top: 0;
+	        border-width: 0 0 1px;
+	    }
+	    .navbar-collapse.collapse {
+	        display: none!important;
+	    }
+	    .navbar-nav {
+	        float: none!important;
+	        margin-top: 7.5px;
+	    }
+	    .navbar-nav>li {
+	        float: none;
+	    }
+	    .navbar-nav>li>a {
+	        padding-top: 10px;
+	        padding-bottom: 10px;
+	    }
+	    .collapse.in{
+	        display:block !important;
+	    }
+	   .navbar-nav .open .dropdown-menu {
+	       position: static;
+	       float: none;
+	       width: auto;
+	       margin-top: 0;
+	       background-color: transparent;
+	       border: 0;
+	       -webkit-box-shadow: none;
+	       box-shadow: none;
+	    }
+	    .navbar-nav {
+	    	background-color: $white;
+	    	&>li{
+	    		&>a{
+	    			color: $black;
+
+	    			&:hover {
+
+	    				&:after {
+	    					width: 10%;
+	    					left: 50px;
+	    				}
+	    			}
+
+	    			&:after {
+	    				content: "";
+	    				position: absolute;
+	    				width: 0%;
+	    				height: 3px;
+	    				background: $orange;
+	    				left: 50px;
+	    				bottom: 10%;
+	    				transform: translate(-50%);
+	    				@include transition(0.3);
+	    			}
+	    		}
+	    	}
+	    }
+}
+@media screen and (max-width: 992px) {
+	.spanPilih {
+		text-align: center;
+	}
+}
+@media screen and (max-width: 768px) {
+	#header{
+		.container {
+			width: 100%;
+		}
+	}
+	.post {
+		article {
+			padding: 15px 20px;
+		}
+	}
+	.testi{
+		p {
+			font-size: 0.8em;
+		}
+	}
+	.partner {
+		figure {
+			padding: 10px;
+		}
+	}
+	.footerTitle {
+		padding: 10px 15px 0px;
+	}
+	.floatRight {
+		text-align: center;
+	}
+}
+@media screen and (min-width: 768px) {
+	.post {
+		height: 200px;
+
+		figure {
+			height: 200px;
+
+			img {
+				height: 100%;
+			}
+		}
+	}
+}

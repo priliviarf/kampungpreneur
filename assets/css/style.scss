@@ -250,10 +250,6 @@ $black: #282828;
  }
  .fig-spec {
  	margin: 20px;
- 	img{
-	 	max-height: 200px;
-	 	width: auto;
- 	}
  }
  /* ================== NEWS =====================*/
  #news {
@@ -266,6 +262,9 @@ $black: #282828;
  	@include box-shadow2();
  	img {
  		@include img-bg();
+ 	}
+ 	article {
+ 		padding: 15px 20px 15px 0;
  	}
  }
  .date {
@@ -374,12 +373,14 @@ $black: #282828;
  .partner {
 
  	a{
+ 		figure {
+ 			padding: 20px;
 
- 		img {
- 			filter:grayscale(1);
- 			@include transition(0.4);
+ 			img {
+ 				filter:grayscale(1);
+ 				@include transition(0.4);
+ 			}
  		}
-
  	}
  	
  	a:hover{
@@ -407,6 +408,10 @@ $black: #282828;
  			font-family: 'OpenSans-SemiBold';
  			color: $blue;
  			@include transition(0.3);
+
+ 			.footerTitle{
+ 				padding: 0px;
+ 			}
  		}
  	}
  }
@@ -441,3 +446,6 @@ $black: #282828;
  a.wA:hover{
  			background-color: #4dc247;
  		}
+
+/* ================== REPONSIVE =====================*/
+ @import '_responsive';
