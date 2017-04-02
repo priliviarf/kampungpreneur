@@ -737,8 +737,29 @@ a {
       padding: 15px 20px 15px 0; }
   a:hover .post .overlay {
     opacity: 0.3; }
-  a:hover .post h4 {
-    color: #f1c40f; }
+
+.category {
+  margin: 10px 0px 15px; }
+  .category span {
+    font-size: 0.8em;
+    font-weight: bold;
+    padding: 7px 10px;
+    color: white; }
+
+.cat-bl span {
+  background-color: #0094c9; }
+
+.cat-or span {
+  background-color: #fcaa11; }
+
+.cat-lor span {
+  background-color: #f1c40f; }
+
+.cat-gr span {
+  background-color: #918c8c; }
+
+.cat-black span {
+  background-color: #282828; }
 
 .date {
   color: #918c8c;
@@ -997,13 +1018,19 @@ a.wA:hover {
         -o-transition: all 0.3s ease-in-out; } }
 @media screen and (max-width: 992px) {
   .spanPilih {
-    text-align: center; } }
+    text-align: center; }
+
+  .category {
+    margin: 30px 0px 15px; } }
 @media screen and (max-width: 768px) {
   #header .container {
     width: 100%; }
 
-  .post article {
+  a .post article {
     padding: 15px 20px; }
+
+  .category {
+    margin: 10px 0px 15px; }
 
   .testi p {
     font-size: 0.8em; }
@@ -1018,9 +1045,9 @@ a.wA:hover {
     text-align: center; } }
 @media screen and (min-width: 768px) {
   .post {
-    height: 200px; }
+    height: 250px; }
     .post figure {
-      height: 200px; }
+      height: 250px; }
       .post figure img {
         height: 100%; } }
 

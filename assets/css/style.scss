@@ -322,10 +322,42 @@ $black: #282828;
  			.overlay {
  				opacity: 0.3;
  			}
- 			h4 {
- 				color: $lightorange;
- 			}
  		}
+ 	}
+ }
+ .category {
+ 	margin: 10px 0px 15px;
+
+ 	span {
+ 		font-size: 0.8em;
+	    font-weight: bold;
+	    padding: 7px 10px;
+	    color: white;
+ 	}
+ }
+ .cat-bl {
+ 	span {
+ 		background-color: $blue;
+ 	}
+ }
+ .cat-or {
+ 	span {
+ 		background-color: $orange;
+ 	}
+ }
+ .cat-lor {
+ 	span {
+ 		background-color: $lightorange;
+ 	}
+ }
+ .cat-gr {
+ 	span {
+ 		background-color: $gray;
+ 	}
+ }
+ .cat-black {
+ 	span {
+ 		background-color: $black;
  	}
  }
  .date {
