@@ -83,7 +83,7 @@
   color: #fcaa11 !important; }
 
 .lightor {
-  color: #fbb737 !important; }
+  color: #f1c40f !important; }
 
 .gray {
   color: #918c8c !important; }
@@ -544,6 +544,15 @@ button.navbar-toggle {
     color: #ffffff;
     background-color: #e67e22; }
 
+a .linkHover {
+  color: #282828;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out; }
+a:hover .linkHover {
+  color: #0094c9; }
+
 /* Heading Style */
 .h2-title {
   text-align: center;
@@ -663,6 +672,25 @@ button.navbar-toggle {
     color: #ffffff; }
 
 /* ================== About =====================*/
+#pilihDesa a .overlay {
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #0094c9;
+  opacity: 0.8;
+  position: absolute;
+  opacity: 0.0;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out; }
+#pilihDesa a i {
+  opacity: 0.0; }
+#pilihDesa a:hover .overlay {
+  opacity: 0.8; }
+#pilihDesa a:hover i {
+  opacity: 0.8; }
+
 .services {
   border-top: 3px solid #ebebeb;
   border-bottom: 3px solid #ebebeb;
@@ -676,18 +704,41 @@ button.navbar-toggle {
 #news > .areaContainer {
   background-color: #f7f7f7; }
 
-.post {
-  background-color: #ffffff;
-  box-shadow: 0 3px 5px 0 rgba(0, 1, 1, 0.1);
-  -webkit-box-shadow: 0 3px 5px 0 rgba(0, 1, 1, 0.1);
-  -moz-box-shadow: 0 3px 5px 0 rgba(0, 1, 1, 0.1);
-  -o-box-shadow: 0 3px 5px 0 rgba(0, 1, 1, 0.1); }
-  .post img {
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center; }
-  .post article {
-    padding: 15px 20px 15px 0; }
+a {
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out; }
+  a .post {
+    background-color: #ffffff;
+    box-shadow: 0 3px 5px 0 rgba(0, 1, 1, 0.1);
+    -webkit-box-shadow: 0 3px 5px 0 rgba(0, 1, 1, 0.1);
+    -moz-box-shadow: 0 3px 5px 0 rgba(0, 1, 1, 0.1);
+    -o-box-shadow: 0 3px 5px 0 rgba(0, 1, 1, 0.1); }
+    a .post figure {
+      position: relative; }
+    a .post img {
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center; }
+    a .post .overlay {
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background: #0094c9;
+      opacity: 0.5;
+      position: absolute;
+      opacity: 0.0;
+      transition: all 0.3s ease-in-out;
+      -webkit-transition: all 0.3s ease-in-out;
+      -moz-transition: all 0.3s ease-in-out;
+      -o-transition: all 0.3s ease-in-out; }
+    a .post article {
+      padding: 15px 20px 15px 0; }
+  a:hover .post .overlay {
+    opacity: 0.3; }
+  a:hover .post h4 {
+    color: #f1c40f; }
 
 .date {
   color: #918c8c;
@@ -758,9 +809,13 @@ button.navbar-toggle {
     .storeItem .itemAction .buy {
       text-align: left; }
     .storeItem .itemAction .detail {
-      text-align: right; }
+      /*text-align: right;*/ }
     .storeItem .itemAction a {
-      color: #ffffff; }
+      color: #ffffff;
+      padding: 10px; }
+      .storeItem .itemAction a:hover {
+        background-color: white;
+        color: #0094c9; }
   .storeItem:hover .overlay {
     height: 100%; }
   .storeItem:hover .detailItem, .storeItem:hover .itemAction {

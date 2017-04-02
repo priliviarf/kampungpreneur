@@ -10,7 +10,7 @@
  /*Color Pallete for Kampung Preneur*/
 $blue : #0094c9;
 $lightblue : #01acf3;
-$lightorange : #fbb737;
+$lightorange : #f1c40f;
 $orange : #fcaa11;
 $darkorange : #e67e22;
 $white : #ffffff;
@@ -109,6 +109,17 @@ $black: #282828;
  	&:hover {
  		color: $white;
  		background-color: $darkorange;
+ 	}
+ }
+ a {
+ 	.linkHover {
+ 		color: $black;
+ 		@include transition(0.3);
+ 	}
+ 	&:hover {
+ 		.linkHover {
+ 		 		color: $blue;
+ 		 	}
  	}
  }
 
@@ -242,6 +253,31 @@ $black: #282828;
     }
  }
  /* ================== About =====================*/
+ #pilihDesa {
+ 	a {
+
+ 		.overlay {
+ 			top:0;
+ 			@include overlay($blue,0.8);
+ 			opacity: 0.0;
+ 			@include transition(0.3);
+ 		}
+
+ 		i {
+ 			opacity: 0.0;
+ 		}
+
+ 		&:hover {
+ 			.overlay {
+ 				opacity: 0.8;
+ 			}
+
+ 			i {
+ 				opacity: 0.8;
+ 			}
+ 		}
+ 	}
+ }
  .services {
  	border-top: 3px solid $lightgray;
  	border-bottom: 3px solid $lightgray;
@@ -257,14 +293,39 @@ $black: #282828;
  		background-color: $flatwhite;
  	}
  }
- .post {
- 	background-color: $white;
- 	@include box-shadow2();
- 	img {
- 		@include img-bg();
- 	}
- 	article {
- 		padding: 15px 20px 15px 0;
+
+ a {
+ 	@include transition(0.3);
+ 	.post {
+ 	 	background-color: $white;
+ 	 	@include box-shadow2();
+
+ 	 	figure {
+ 	 		position: relative;
+ 	 	}
+ 	 	img {
+ 	 		@include img-bg();
+ 	 	}
+ 	 	.overlay {
+ 	 		top: 0;
+ 	 		@include overlay($blue,0.5);
+ 	 		opacity: 0.0;
+ 	 		@include transition(0.3);
+ 	 	}
+ 	 	article {
+ 	 		padding: 15px 20px 15px 0;
+ 	 	}
+ 	 	
+ 	 }
+ 	&:hover {
+ 		.post {
+ 			.overlay {
+ 				opacity: 0.3;
+ 			}
+ 			h4 {
+ 				color: $lightorange;
+ 			}
+ 		}
  	}
  }
  .date {
@@ -331,11 +392,17 @@ $black: #282828;
  		}
 
  		.detail {
- 			text-align: right;
+ 			/*text-align: right;*/
  		}
 
  		a {
  			color: $white;
+ 			padding: 10px;
+
+ 			&:hover {
+			    background-color: white;
+			    color: $blue;
+ 			}
  		}
  	}
  	&:hover {
