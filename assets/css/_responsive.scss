@@ -97,6 +97,11 @@
 	.category {
  		margin: 30px 0px 15px;
  	}
+ 	.search {
+ 		.form-control {
+ 			width: 40%;
+ 		}
+ 	}
 }
 @media screen and (max-width: 768px) {
 	#header{
@@ -111,6 +116,15 @@
 	}
 	.category {
  		margin: 10px 0px 15px;
+ 		text-align: left;
+ 		p {
+ 			text-align: left;
+ 		}
+ 	}
+ 	.headerCover-news {
+ 		.category {
+ 			text-align: left;
+ 		}
  	}
 	.testi{
 		p {
@@ -128,6 +142,14 @@
 	.floatRight {
 		text-align: center;
 	}
+	.absOnHeader {
+		display: none;
+	}
+	.search {
+ 		.form-control {
+ 			width: 80%;
+ 		}
+ 	}
 }
 @media screen and (min-width: 768px) {
 	.post {

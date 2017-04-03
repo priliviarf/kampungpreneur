@@ -144,6 +144,23 @@ select.form-control {
 	display: inline;
 	border-radius: 0px;
 }
+.form-control {
+	@include box-shadow2();
+	border-color: $white;
+}
+.btn-default {
+	background-color: $orange;
+    color: $white;
+    border-color: $orange;
+    @include transition(0.3);
+    @include box-shadow2();
+    
+    &:hover {
+    	background-color: $darkorange;
+	    color: $white;
+	    border-color: $darkorange;
+    }
+}
 
 /* --- KampungPreneurReset --- */
 button.navbar-toggle {

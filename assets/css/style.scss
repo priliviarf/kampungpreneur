@@ -150,6 +150,11 @@ $black: #282828;
 	margin: 10px 0;
 	border: solid 2px $orange;
 }
+.hrSide-blue {
+	max-width: 80px;
+	margin: 10px 0;
+	border: solid 2px $blue;
+}
  /* ================== NavBar =====================*/
  #navbar{
  	padding: 0 20px;
@@ -233,6 +238,7 @@ $black: #282828;
  }
  /* ================== Header =====================*/
  .headerCover {
+ 	position: relative;
  	width: 100%;
  	height: 100vh;
  	@include img-bg();
@@ -240,6 +246,15 @@ $black: #282828;
 
  	.overlay {
  		@include overlay($black,0.8);
+ 	}
+ }
+ .headerCover-news {
+ 	height: 80vh;
+ 	background-position: top;
+ 	background-attachment: inherit;
+
+ 	.category {
+ 		text-align: right;
  	}
  }
  .bottomArrow {
@@ -333,6 +348,17 @@ $black: #282828;
 	    font-weight: bold;
 	    padding: 7px 10px;
 	    color: white;
+ 	}
+ 	p {
+ 		text-align: right;
+ 		margin-top: 2em;
+ 	}
+ }
+ .cat-header {
+ 	margin: 4em 0 2em;
+
+ 	span {
+ 		padding: 10px 20px;
  	}
  }
  .cat-bl {
@@ -545,6 +571,29 @@ $black: #282828;
  a.wA:hover{
  			background-color: #4dc247;
  		}
-
+/*----------------------------------------------NEWS PAGE-----------------------------------------------------*/
+.absOnHeader {
+	position: absolute; 
+	top: 15%;
+    left: 10%;
+    z-index: 5;
+}
+.owl-header-news {
+	.owl-item {
+		margin-right: 0 !important;
+	}
+	.owl-dots {
+	    position: absolute;
+	    bottom: 10px;
+	    left: 50%;
+	    transform: translateX(-50%);
+	}
+}
+.search {
+	.form-control {
+		width: 60%;
+		@include radius(0);
+	}
+}
 /* ================== REPONSIVE =====================*/
  @import '_responsive';
