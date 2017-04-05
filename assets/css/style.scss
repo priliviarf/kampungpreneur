@@ -44,6 +44,12 @@ $black: #282828;
 	-moz-box-shadow: 0 3px 5px 0 rgba(0,1,1,.1);
 	-o-box-shadow: 0 3px 5px 0 rgba(0,1,1,.1);
 }
+@mixin no-box-shadow(){
+	box-shadow: none !important; 
+	-webkit-box-shadow: none !important; 
+	-moz-box-shadow: none !important; 
+	-o-box-shadow: none !important; 
+}
 @mixin overlay($color,$opa){
 	width : 100% ;
 	height: 100% ;
@@ -213,7 +219,7 @@ $black: #282828;
  	}
  }
 
- .floatNav {
+ .floatNav,.fixedNav {
  	background-color: $white;
  	@include box-shadow();
 
@@ -308,30 +314,28 @@ $black: #282828;
  		background-color: $flatwhite;
  	}
  }
+ .post,.post-detail, aside {
+  	background-color: $white;
+  	@include box-shadow2();
 
+  	figure {
+  		position: relative;
+  	}
+  	img {
+  		@include img-bg();
+  	}
+  	.overlay {
+  		top: 0;
+  		@include overlay($blue,0.5);
+  		opacity: 0.0;
+  		@include transition(0.3);
+  	}
+  	article {
+  		padding: 15px 20px 15px 0;
+  	}
+  }
  a {
  	@include transition(0.3);
- 	.post {
- 	 	background-color: $white;
- 	 	@include box-shadow2();
-
- 	 	figure {
- 	 		position: relative;
- 	 	}
- 	 	img {
- 	 		@include img-bg();
- 	 	}
- 	 	.overlay {
- 	 		top: 0;
- 	 		@include overlay($blue,0.5);
- 	 		opacity: 0.0;
- 	 		@include transition(0.3);
- 	 	}
- 	 	article {
- 	 		padding: 15px 20px 15px 0;
- 	 	}
- 	 	
- 	 }
  	&:hover {
  		.post {
  			.overlay {
@@ -340,6 +344,18 @@ $black: #282828;
  		}
  	}
  }
+ .post-detail {
+  	margin: 30px 30px 20px;
+  }
+  .post-title{
+  	background-color: $blue;
+    color: $white;
+    padding: 20px 40px;
+  }
+  .post-article {
+    padding: 20px 40px !important;
+    font-family: 'OpenSans-Regular';
+  }
  .category {
  	margin: 10px 0px 15px;
 
@@ -390,6 +406,37 @@ $black: #282828;
  	color: $gray;
  	font-size: 0.8em;
  	font-family: 'OpenSans-Regular';
+ }
+ .sideBar {
+    margin: 20px 30px 20px 0px;
+    padding: 20px;
+    font-family: 'OpenSans-SemiBold';
+
+    li {
+    	a {
+    		&:hover {
+    			padding-left: 7px;
+    		}
+    	}
+    }
+ }
+ .comment {
+    margin: 20px 20px 40px;
+
+    h4 {
+    	font-family: 'OpenSans-SemiBold';
+    }
+    p {
+    	font-size: 0.9em;
+    }
+    figure {
+    	padding: 0px 10px 10px;
+
+    	img {
+		    @include radius(100%);
+		    margin-top: 10px;
+    	}
+    }
  }
  /* ================== VIDEOS =====================*/
  .videos {
@@ -537,6 +584,10 @@ $black: #282828;
  			.footerTitle{
  				padding: 0px;
  			}
+
+ 			&:hover {
+ 				padding-left: 7px;
+ 			}
  		}
  	}
  }
@@ -594,6 +645,14 @@ $black: #282828;
 		width: 60%;
 		@include radius(0);
 	}
+}
+.inputTextArea {
+	min-height: 200px;
+}
+.quotes {
+	padding-left: 30px;
+    border-left: 2px solid $blue;
+    font-style: italic;
 }
 /* ================== REPONSIVE =====================*/
  @import '_responsive';

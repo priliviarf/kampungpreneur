@@ -9,6 +9,12 @@ figure {
 	&>img {
 		width: 100%;
 	}
+
+	figcaption {
+		text-align: center;
+	    font-size: 0.75em;
+	    padding: 10px 30px;
+	}
 }
 a {
 	&:hover {
@@ -17,6 +23,15 @@ a {
 }
 li {
 	list-style-type: none;
+}
+li {
+	list-style-type: none;
+	padding-bottom: 10px;
+
+	a {
+		color: $blue;
+		@include transition(0.3);
+	}
 }
 .containerCenter {
 	position: absolute;
@@ -28,6 +43,15 @@ li {
 .beCenter {
 	float: none;
 	margin: auto;
+}
+.fullWidth {
+	width: 100% !important;
+}
+.moreWidth {
+	width: 70% !important;
+}
+.noShadow {
+	@include no-box-shadow();
 }
 .navbar {
 	margin: 0px;
@@ -139,12 +163,15 @@ h2 {
 }
 
 /* --- Form --- */
+.form-control {
+	border: 1px solid $lightgray;
+    border-radius: 0;
+    @include no-box-shadow();
+}
 select.form-control {
 	width: 200px;
 	display: inline;
 	border-radius: 0px;
-}
-.form-control {
 	@include box-shadow2();
 	border-color: $white;
 }
