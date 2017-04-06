@@ -227,7 +227,7 @@
 						<div class="pd-20">
 							<form>
 								<div class="form-group">
-									<input type="textarea" class="form-control inputTextArea" id="" placeholder="Tambahkan Komentar...">
+									<textarea class="form-control" rows="5" id="" placeholder="Tambahkan Komentar..."></textarea>
 								</div>
 								<section class="row">
 									<div class="col-md-4 form-group">
@@ -248,10 +248,12 @@
 			<div class="col-md-3">
 				<section class="mg-t-30">
 					<form method="POST" action="" class="search">
-						<div class="form-group">
-							<input type="text" class="form-control col-xs-3 moreWidth" id="" placeholder="Pencarian...">
+						<div class="input-group">
+							<input type="text" class="form-control col-xs-3" id="" placeholder="Pencarian...">
+							<div class="input-group-btn">
+								<button type="submit" class="btn btn-default"><i class="fa fa-search"></i></button>
+							</div>
 						</div>
-						<button type="submit" class="btn btn-default"><i class="fa fa-search"></i></button>
 					</form>
 				</section>
 				<aside class="sideBar">
@@ -456,6 +458,9 @@
 <script type="text/javascript">
 	new WOW().init();
 </script>
+
+<!-- Share Link -->
+<!-- Go to www.addthis.com/dashboard to customize your tools --> <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-58e5adee044db200"></script> 
 
 </body>
 </html>

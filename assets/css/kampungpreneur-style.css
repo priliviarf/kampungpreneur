@@ -1063,15 +1063,13 @@ a.wA:hover {
   left: 50%;
   transform: translateX(-50%); }
 
-.search .form-control {
-  width: 60%;
-  border-radius: 0;
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  -o-border-radius: 0; }
-
-.inputTextArea {
-  min-height: 200px; }
+.search {
+  padding-right: 30px; }
+  .search .form-control {
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -o-border-radius: 0; }
 
 .quotes {
   padding-left: 30px;

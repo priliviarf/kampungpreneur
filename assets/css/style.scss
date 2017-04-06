@@ -641,13 +641,10 @@ $black: #282828;
 	}
 }
 .search {
+	padding-right: 30px;
 	.form-control {
-		width: 60%;
 		@include radius(0);
 	}
-}
-.inputTextArea {
-	min-height: 200px;
 }
 .quotes {
 	padding-left: 30px;
