@@ -150,11 +150,11 @@ text-align: center;
 /* --- Heading --- */
 h1 {
 	font-size: 4em;
-	font-family: 'SourceSansPro-Bold';
+	font-family: 'OpenSans-Bold';
 }
 h2 {
 	font-size: 2em;
-	font-family: 'SourceSansPro-Bold';
+	font-family: 'OpenSans-Bold';
 }
 
 /* --- Button --- */
@@ -173,7 +173,6 @@ select.form-control {
 	display: inline;
 	border-radius: 0px;
 	@include box-shadow2();
-	border-color: $white;
 }
 .btn-default {
 	background-color: $orange;

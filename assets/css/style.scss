@@ -552,6 +552,65 @@ $black: #282828;
  		}
  	}
  }
+/*----------------------------------------------STORE PAGE-----------------------------------------------------*/
+.storePage {
+	background-color: $flatwhite;
+}
+.headerStore {
+	background-color: $orange;
+	.headerStore-side {
+		color: $white;
+		text-align: right;
+	    margin-top: 15%;
+	    padding: 0 25px;
+
+		h1,h2,h3,h4 {
+			margin: 5px 0px 0px;
+		}
+		h3,h4 {
+			font-family: 'OpenSans-Regular';
+		}
+	}
+
+	figure {
+		img {
+			@include img-bg();
+		}
+	}
+}
+.product {
+	background-color: $white;
+	@include box-shadow2();
+
+	.storeItem {
+
+		figure {
+
+			img {
+				@include img-bg();
+			}
+		}
+
+		.itemAction {
+			top: 50%;
+			transform: translateY(-50%);
+			bottom: inherit;
+
+			a {
+				border: 1px solid $white;
+			}
+		}
+	}
+
+	.detailItem {
+		padding: 20px;
+
+		p {
+			margin: 0px;
+		}
+	}
+}
+
  /* ================== COUNTDOWN =====================*/
  #countdown {
  	.overlay{

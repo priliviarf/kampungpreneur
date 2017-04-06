@@ -105,8 +105,17 @@
  	.sideBar {
  		margin-right:0px;
  	}
+ 	.headerStore {
+ 		
+ 		.headerStore-side {
+ 		    margin-top: 7%;
+ 		}
+ 	}
 }
 @media screen and (max-width: 768px) {
+	.hidden-mobile {
+		display: none;
+	}
 	#header{
 		.container {
 			width: 100%;
@@ -158,6 +167,11 @@
  	}
  	.post-detail {
  		margin: 30px 5px 20px;
+ 	}
+ 	.comment {
+ 		img {
+ 			width: 89px;
+ 		}
  	}
 }
 @media screen and (min-width: 768px) {

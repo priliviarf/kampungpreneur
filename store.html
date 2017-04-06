@@ -8,7 +8,7 @@
 	<meta name="author" content="KampungPreneur IT Support Team">
 	<meta name="robots" content="index,follow">
 
-	<title>Berita | KampungPreneur</title>
+	<title>Usaha Kami | KampungPreneur</title>
 
 	<!-- Shortcut icon -->
 	<link rel="shortcut icon" type="x-icon" href="./assets/img/icon.png">
@@ -38,7 +38,7 @@
 <!-- <div class="se-pre-con"></div> -->
 <!-- Navbar section -->
 <section>
-	<nav id="navbar" class="navbar navbar-dafult navbar-fixed-top">
+	<nav id="navbar" class="navbar navbar-dafult navbar-fixed-top fixedNav">
 	  <div class="container-fluid">
 	    <div class="navbar-header">
 	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#Navbar">
@@ -55,10 +55,10 @@
 	      <ul class="nav navbar-nav navbar-right">
 	        <li><a href="./index.html#header">BERANDA</a></li>
 	        <li><a href="#about">TENTANG KAMI</a></li>
-	        <li class="active"><a href="#news">BERITA</a></li>
+	        <li><a href="#news">BERITA</a></li>
 	        <li><a href="#">PENDAMPINGAN</a></li>
 	        <li><a href="#">BANTUAN MODAL</a></li>
-	        <li><a href="#store">USAHA KAMI</a></li>
+	        <li class="active"><a href="#store">USAHA KAMI</a></li>
 	        <li><a href="#"><i class="fa fa-user fa-lg"></i> DAFTAR</a></li>
 	        <li><a href="#"><i class="fa fa-sign-in fa-lg"></i> MASUK</a></li>
 	      </ul>
@@ -68,52 +68,34 @@
 </section>
 
 <!-- Header -->
-<section id="header">
-	<div class="absOnHeader">
-		<h4 class="wh big openSansRegular">Berita Terbaru</h4>
-		<hr class="hrSide-blue">
-	</div>
-	<!-- <div class="owl-carousel owl-theme carousel-3 owl-header-news">
-		<div class="item">
-		</div>
-		<div class="item">
-		</div>
-		<div class="item">
-		</div>
-	</div> -->
-	<div class="headerCover headerCover-news" style="background-image: url('./assets/img/wallpaper.jpg');">
-		<div class="overlay"></div>
-			<div class="container containerCenter wh col-md-8 pd-lr-30">
-				<section class="row">
-					<div class="col-md-8 col-sm-8 col-xs-12">
-						<h1>LOREM IPSUM DOLOR SIT AMET</h1>
-					</div>
-					<div class="col-md-4 col-sm-4 col-xs-12">
-						<div class="category cat-bl cat-header">
-							<span>Category1</span>
-							<p class="gray openSansSemiBold">23 March 2017</p>
-						</div>	
-					</div>
-				</section>
-				<section class="row">
-					<div class="col-md-8 col-sm-12 col-xs-12">
-						<span>
-							<p class="normal mg-b-20">
-								Delenit utroque vivendo est ea. Vim autem virtute concludaturque id. Cu ferri oblique has. At sed impedit apeirian ullamcorper, eum cu amet viris. Duo alia causae vituperatoribus ea, salutatus adolescens conclusionemque qui an. Illum euripidis eu vix ...
-							</p>
-						</span>
+<section id="header" class="underNav hidden-mobile">
+	<div class="container-fluid">
+		<section class="row headerStore">
+			<div class="col-md-4 col-sm-4 headerStore-side">
+				<h2>KUE</h2>
+				<h1>BOLU MANIS</h1>
+				<h3>KAMPUNG KARANGGENENG</h3>
+				<section class="mg-t-30">
+					<div class="category">
+						<a href="./product.html" class="btn btn1">Detail Produk</a>
 					</div>
 				</section>
 			</div>
+			<div class="col-md-8 col-sm-8 noPad">
+				<figure>
+					<img src="./assets/img/bg-header-store.png" style="background-image: url('./assets/img/product2.jpg');">
+				</figure>
+			</div>
+		</section>
 	</div>
 </section>
 
-<!-- News -->
-<section id="news">
+<!-- STORE -->
+<section id="store" class="storePage">
 	<div class="container-fluid areaContainer">
 		<section class="row pd-lr-30 ">
 			<div class="col-md-9">
-				<h3 class="openSansSemiBold">Berita Lainnya</h3>
+				<h3 class="openSansSemiBold">Usaha KampungPreneur</h3>
 				<hr class="hrSide-blue">
 			</div>
 			<div class="col-md-3 mg-t-20">
@@ -128,115 +110,203 @@
 			</div>
 		</section>
 		<section class="row pd-lr-30">
-			<div class="col-md-offset-0 col-md-6 col-sm-offset-1 col-sm-10">
-				<a href="./news-detail.html">
-					<section class="post mg-bt-20">
-						<section class="row">
-							<div class="col-md-6 col-sm-6">
-								<figure>
-									<img src="./assets/img/bg-news.png" style="background-image: url('./assets/img/gallery1.jpg');">
-									<div class="overlay"></div>
-								</figure>
-							</div>
-							<div class="col-md-6 col-sm-6">
-								<article>
-									<div class="category cat-bl">
-										<span>Category1</span>
-									</div>
-									<h4 class="h4-spec big linkHover">Lorem ipsum dolor sit amet</h4>
-									<p class="date mg-b-10">23 March 2017</p>	
-									<p class="normal sourceSansRegular black">
-										Delenit fierent honestatis has et, sit an clita verear, ex philosophia consequuntur cum. Commodo probatus cu usu. Sit discere nermis facilisi ea,  sea ad  ...
-									</p>
-								</article>
-							</div>
-						</section>
-					</section>
-				</a>
+			<div class="col-md-3 col-sm-6 mg-t-20">
+		    	<div class="product">
+			    	<section class="storeItem">
+			    		<div class="overlay"></div>
+			    		<figure>
+			    			<img src="./assets/img/bg.png" style="background-image: url('./assets/img/product1.jpg');">
+			    		</figure>
+			    		<div class="itemAction">
+			    			<section class="row">
+			    				<div class="col-md-8 col-md-offset-2 alignCenter">
+			    					<a href="./product.html">
+			    						<i class="fa fa-info-circle pd-r-10"></i>   Detail
+			    					</a>
+			    				</div>
+			    			</section>
+			    		</div>
+			    	</section>
+			    	<div class="detailItem">
+		    			<p class="openSansSemiBold big">Product Name</p>
+		    			<p>Product tag</p>
+		    			<p class="openSansSemiBold lightor big">Rp 20.000</p>
+		    		</div>
+		    	</div>
 			</div>
-			<div class="col-md-offset-0 col-md-6 col-sm-offset-1 col-sm-10">
-				<a href="./news-detail.html">
-					<section class="post mg-bt-20">
-						<section class="row">
-							<div class="col-md-6 col-sm-6">
-								<figure>
-									<img src="./assets/img/bg-news.png" style="background-image: url('./assets/img/gallery1.jpg');">
-									<div class="overlay"></div>
-								</figure>
-							</div>
-							<div class="col-md-6 col-sm-6">
-								<article class="pd-bt-15 pd-lr-10">
-									<div class="category cat-black">
-										<span>Category2</span>
-									</div>
-									<h4 class="h4-spec big linkHover">Lorem ipsum dolor sit amet</h4>
-									<p class="date mg-b-10">23 March 2017</p>	
-									<p class="normal sourceSansRegular black">
-										Delenit fierent honestatis has et, sit an clita verear, ex philosophia consequuntur cum. Commodo probatus cu usu. Sit discere nermis facilisi ea,  sea ad  ...
-									</p>
-								</article>
-							</div>
-						</section>
-					</section>
-				</a>
+			<div class="col-md-3 col-sm-6 mg-t-20">
+		    	<div class="product">
+			    	<section class="storeItem">
+			    		<div class="overlay"></div>
+			    		<figure>
+			    			<img src="./assets/img/bg.png" style="background-image: url('./assets/img/product1.jpg');">
+			    		</figure>
+			    		<div class="itemAction">
+			    			<section class="row">
+			    				<div class="col-md-8 col-md-offset-2 alignCenter">
+			    					<a href="./product.html">
+			    						<i class="fa fa-info-circle pd-r-10"></i>   Detail
+			    					</a>
+			    				</div>
+			    			</section>
+			    		</div>
+			    	</section>
+			    	<div class="detailItem">
+		    			<p class="openSansSemiBold big">Product Name</p>
+		    			<p>Product tag</p>
+		    			<p class="openSansSemiBold lightor big">Rp 20.000</p>
+		    		</div>
+		    	</div>
+			</div>
+			<div class="col-md-3 col-sm-6 mg-t-20">
+		    	<div class="product">
+			    	<section class="storeItem">
+			    		<div class="overlay"></div>
+			    		<figure>
+			    			<img src="./assets/img/bg.png" style="background-image: url('./assets/img/product1.jpg');">
+			    		</figure>
+			    		<div class="itemAction">
+			    			<section class="row">
+			    				<div class="col-md-8 col-md-offset-2 alignCenter">
+			    					<a href="./product.html">
+			    						<i class="fa fa-info-circle pd-r-10"></i>   Detail
+			    					</a>
+			    				</div>
+			    			</section>
+			    		</div>
+			    	</section>
+			    	<div class="detailItem">
+		    			<p class="openSansSemiBold big">Product Name</p>
+		    			<p>Product tag</p>
+		    			<p class="openSansSemiBold lightor big">Rp 20.000</p>
+		    		</div>
+		    	</div>
+			</div>
+			<div class="col-md-3 col-sm-6 mg-t-20">
+		    	<div class="product">
+			    	<section class="storeItem">
+			    		<div class="overlay"></div>
+			    		<figure>
+			    			<img src="./assets/img/bg.png" style="background-image: url('./assets/img/product1.jpg');">
+			    		</figure>
+			    		<div class="itemAction">
+			    			<section class="row">
+			    				<div class="col-md-8 col-md-offset-2 alignCenter">
+			    					<a href="./product.html">
+			    						<i class="fa fa-info-circle pd-r-10"></i>   Detail
+			    					</a>
+			    				</div>
+			    			</section>
+			    		</div>
+			    	</section>
+			    	<div class="detailItem">
+		    			<p class="openSansSemiBold big">Product Name</p>
+		    			<p>Product tag</p>
+		    			<p class="openSansSemiBold lightor big">Rp 20.000</p>
+		    		</div>
+		    	</div>
 			</div>
 		</section>
 		<section class="row pd-lr-30">
-			<div class="col-md-offset-0 col-md-6 col-sm-offset-1 col-sm-10">
-				<a href="./news-detail.html">
-					<section class="post mg-bt-20">
-						<section class="row">
-							<div class="col-md-6 col-sm-6">
-								<figure>
-									<img src="./assets/img/bg-news.png" style="background-image: url('./assets/img/gallery1.jpg');">
-									<div class="overlay"></div>
-								</figure>
-							</div>
-							<div class="col-md-6 col-sm-6">
-								<article class="pd-bt-15 pd-lr-10">
-									<div class="category cat-or">
-										<span>Category3</span>
-									</div>
-									<h4 class="h4-spec big linkHover">Lorem ipsum dolor sit amet</h4>
-									<p class="date mg-b-10">23 March 2017</p>	
-									<p class="normal sourceSansRegular black">
-										Delenit fierent honestatis has et, sit an clita verear, ex philosophia consequuntur cum. Commodo probatus cu usu. Sit discere nermis facilisi ea,  sea ad  ...
-									</p>
-								</article>
-							</div>
-						</section>
-					</section>
-				</a>
+			<div class="col-md-3 col-sm-6 mg-t-20">
+		    	<div class="product">
+			    	<section class="storeItem">
+			    		<div class="overlay"></div>
+			    		<figure>
+			    			<img src="./assets/img/bg.png" style="background-image: url('./assets/img/product1.jpg');">
+			    		</figure>
+			    		<div class="itemAction">
+			    			<section class="row">
+			    				<div class="col-md-8 col-md-offset-2 alignCenter">
+			    					<a href="./product.html">
+			    						<i class="fa fa-info-circle pd-r-10"></i>   Detail
+			    					</a>
+			    				</div>
+			    			</section>
+			    		</div>
+			    	</section>
+			    	<div class="detailItem">
+		    			<p class="openSansSemiBold big">Product Name</p>
+		    			<p>Product tag</p>
+		    			<p class="openSansSemiBold lightor big">Rp 20.000</p>
+		    		</div>
+		    	</div>
 			</div>
-			<div class="col-md-offset-0 col-md-6 col-sm-offset-1 col-sm-10">
-				<a href="./news-detail.html">
-					<section class="post mg-bt-20">
-						<section class="row">
-							<div class="col-md-6 col-sm-6">
-								<figure>
-									<img src="./assets/img/bg-news.png" style="background-image: url('./assets/img/gallery1.jpg');">
-									<div class="overlay"></div>
-								</figure>
-							</div>
-							<div class="col-md-6 col-sm-6">
-								<article class="pd-bt-15 pd-lr-10">
-									<div class="category cat-gr">
-										<span>Category4</span>
-									</div>
-									<h4 class="h4-spec big linkHover">Lorem ipsum dolor sit amet</h4>
-									<p class="date mg-b-10">23 March 2017</p>	
-									<p class="normal sourceSansRegular black">
-										Delenit fierent honestatis has et, sit an clita verear, ex philosophia consequuntur cum. Commodo probatus cu usu. Sit discere nermis facilisi ea,  sea ad  ...
-									</p>
-								</article>
-							</div>
-						</section>
-					</section>
-				</a>
+			<div class="col-md-3 col-sm-6 mg-t-20">
+		    	<div class="product">
+			    	<section class="storeItem">
+			    		<div class="overlay"></div>
+			    		<figure>
+			    			<img src="./assets/img/bg.png" style="background-image: url('./assets/img/product1.jpg');">
+			    		</figure>
+			    		<div class="itemAction">
+			    			<section class="row">
+			    				<div class="col-md-8 col-md-offset-2 alignCenter">
+			    					<a href="./product.html">
+			    						<i class="fa fa-info-circle pd-r-10"></i>   Detail
+			    					</a>
+			    				</div>
+			    			</section>
+			    		</div>
+			    	</section>
+			    	<div class="detailItem">
+		    			<p class="openSansSemiBold big">Product Name</p>
+		    			<p>Product tag</p>
+		    			<p class="openSansSemiBold lightor big">Rp 20.000</p>
+		    		</div>
+		    	</div>
+			</div>
+			<div class="col-md-3 col-sm-6 mg-t-20">
+		    	<div class="product">
+			    	<section class="storeItem">
+			    		<div class="overlay"></div>
+			    		<figure>
+			    			<img src="./assets/img/bg.png" style="background-image: url('./assets/img/product1.jpg');">
+			    		</figure>
+			    		<div class="itemAction">
+			    			<section class="row">
+			    				<div class="col-md-8 col-md-offset-2 alignCenter">
+			    					<a href="./product.html">
+			    						<i class="fa fa-info-circle pd-r-10"></i>   Detail
+			    					</a>
+			    				</div>
+			    			</section>
+			    		</div>
+			    	</section>
+			    	<div class="detailItem">
+		    			<p class="openSansSemiBold big">Product Name</p>
+		    			<p>Product tag</p>
+		    			<p class="openSansSemiBold lightor big">Rp 20.000</p>
+		    		</div>
+		    	</div>
+			</div>
+			<div class="col-md-3 col-sm-6 mg-t-20">
+		    	<div class="product">
+			    	<section class="storeItem">
+			    		<div class="overlay"></div>
+			    		<figure>
+			    			<img src="./assets/img/bg.png" style="background-image: url('./assets/img/product1.jpg');">
+			    		</figure>
+			    		<div class="itemAction">
+			    			<section class="row">
+			    				<div class="col-md-8 col-md-offset-2 alignCenter">
+			    					<a href="./product.html">
+			    						<i class="fa fa-info-circle pd-r-10"></i>   Detail
+			    					</a>
+			    				</div>
+			    			</section>
+			    		</div>
+			    	</section>
+			    	<div class="detailItem">
+		    			<p class="openSansSemiBold big">Product Name</p>
+		    			<p>Product tag</p>
+		    			<p class="openSansSemiBold lightor big">Rp 20.000</p>
+		    		</div>
+		    	</div>
 			</div>
 		</section>
-		<section class="row mg-bt-20">
-			<div class="alignCenter mg-b-20">
+		<section class="row mg-bt-30">
+			<div class="alignCenter mg-bt-20">
 				<a href="#" class="btn2">
 					<i class="fa fa-spinner fa-spin fa-fw"></i>
 					<span>MUAT LAGI</span>
