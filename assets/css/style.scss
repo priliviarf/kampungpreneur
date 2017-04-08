@@ -537,7 +537,7 @@ $black: #282828;
  		@include overlay($black,0.8);
  	}
  }
- /* ================== STORE =====================*/
+ /* ================== STORE in INDEX =====================*/
  .storeItem{
  	position: relative;
  	overflow: hidden;
@@ -546,7 +546,6 @@ $black: #282828;
  	.overlay{
  		@include overlay($blue,0.9);
  		height: 0%;
- 		z-index: 5;
  		@include transition(0.5);
  	}
 
@@ -567,7 +566,6 @@ $black: #282828;
 	    width: 100%;
 	    padding: 20px;
 	    opacity: 0;
-	    z-index: 6;
 	    @include transition(0.6);
 
  		.buy {
@@ -629,6 +627,10 @@ $black: #282828;
 
 	.storeItem {
 
+		.overlay {
+			z-index: 5;
+		}
+
 		figure {
 
 			img {
@@ -640,6 +642,7 @@ $black: #282828;
 			top: 50%;
 			transform: translateY(-50%);
 			bottom: inherit;
+			z-index: 6;
 
 			a {
 				border: 1px solid $white;
@@ -653,7 +656,18 @@ $black: #282828;
 		p {
 			margin: 0px;
 		}
+
+		a {
+			color: $black;
+
+			&:hover {
+				color: $blue;
+			}
+		}
 	}
+}
+aside .product {
+	@include no-box-shadow();
 }
 
  /* ================== COUNTDOWN =====================*/

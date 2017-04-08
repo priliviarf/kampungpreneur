@@ -971,7 +971,7 @@ a {
     opacity: 0.8;
     position: absolute; }
 
-/* ================== STORE =====================*/
+/* ================== STORE in INDEX =====================*/
 .storeItem {
   position: relative;
   overflow: hidden;
@@ -983,7 +983,6 @@ a {
     opacity: 0.9;
     position: absolute;
     height: 0%;
-    z-index: 5;
     transition: all 0.5s ease-in-out;
     -webkit-transition: all 0.5s ease-in-out;
     -moz-transition: all 0.5s ease-in-out;
@@ -1004,7 +1003,6 @@ a {
     width: 100%;
     padding: 20px;
     opacity: 0;
-    z-index: 6;
     transition: all 0.6s ease-in-out;
     -webkit-transition: all 0.6s ease-in-out;
     -moz-transition: all 0.6s ease-in-out;
@@ -1050,6 +1048,8 @@ a {
   -webkit-box-shadow: 0 3px 5px 0 rgba(0, 1, 1, 0.1);
   -moz-box-shadow: 0 3px 5px 0 rgba(0, 1, 1, 0.1);
   -o-box-shadow: 0 3px 5px 0 rgba(0, 1, 1, 0.1); }
+  .product .storeItem .overlay {
+    z-index: 5; }
   .product .storeItem figure img {
     background-size: cover;
     background-repeat: no-repeat;
@@ -1057,13 +1057,24 @@ a {
   .product .storeItem .itemAction {
     top: 50%;
     transform: translateY(-50%);
-    bottom: inherit; }
+    bottom: inherit;
+    z-index: 6; }
     .product .storeItem .itemAction a {
       border: 1px solid #ffffff; }
   .product .detailItem {
     padding: 20px; }
     .product .detailItem p {
       margin: 0px; }
+    .product .detailItem a {
+      color: #282828; }
+      .product .detailItem a:hover {
+        color: #0094c9; }
+
+aside .product {
+  box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  -o-box-shadow: none !important; }
 
 /* ================== COUNTDOWN =====================*/
 #countdown .overlay {
@@ -1265,7 +1276,11 @@ a.wA:hover {
     margin-right: 0px; }
 
   .headerStore .headerStore-side {
-    margin-top: 7%; } }
+    margin-top: 7%; }
+
+  .product-info article {
+    padding-left: 20px;
+    padding-right: 20px; } }
 @media screen and (max-width: 768px) {
   .hidden-mobile {
     display: none; }
