@@ -128,6 +128,64 @@ $black: #282828;
  		 	}
  	}
  }
+  #news,#product {
+ 	&>.areaContainer{
+ 		background-color: $flatwhite;
+ 	}
+ }
+ .mypills-center {
+ 	padding: 20px;
+ 	ul {
+ 		display: flex;
+	    justify-content: center;
+	    text-align: center;
+	    align-items: center;
+	    li {
+	    	float: none;
+
+	    	a {
+	    		@include radius(0);
+	    		font-family: 'OpenSans-Regular';
+	    		color: $gray;
+	    		border-bottom: 2px solid $white;
+
+	    		&:hover {
+	    			color: $black;
+	    			background-color: $white;
+	    		}
+
+	    	}
+
+	    	&.active {
+	    		&>a {
+	    			color: $black;
+	    			background-color: $white;
+	    			border-bottom: 2px solid $blue;
+
+	    			&:active,&:focus,&:hover {
+	    				color: $black;
+	    				background-color: $white;
+	    			}
+
+	    			&:active,&:focus {
+	    				border-bottom: 2px solid $blue;
+	    			}
+	    		}
+	    	}
+	    }
+ 	}
+ }
+ figure{
+  		position: relative;
+
+  		iframe {
+  			position: absolute;
+  			top: 0;
+  			left: 0;
+  			width: 100%;
+  			height: 100%;
+  		}
+  	}
 
 /* Heading Style */
 .h2-title {
@@ -309,11 +367,6 @@ $black: #282828;
  	margin: 20px;
  }
  /* ================== NEWS =====================*/
- #news {
- 	&>.areaContainer{
- 		background-color: $flatwhite;
- 	}
- }
  .post,.post-detail, aside {
   	background-color: $white;
   	@include box-shadow2();
@@ -473,17 +526,6 @@ $black: #282828;
  /* ================== VIDEOS =====================*/
  .videos {
  	padding:20px;
- 	&>figure{
- 		position: relative;
-
- 		iframe {
- 			position: absolute;
- 			top: 0;
- 			left: 0;
- 			width: 100%;
- 			height: 100%;
- 		}
- 	}
  }
  /* ================== FEATURES/PENDAMPINGAN =====================*/
  .features {
@@ -504,6 +546,7 @@ $black: #282828;
  	.overlay{
  		@include overlay($blue,0.9);
  		height: 0%;
+ 		z-index: 5;
  		@include transition(0.5);
  	}
 
@@ -512,7 +555,8 @@ $black: #282828;
  		color: $white;
  		text-align: center;
  		@include transition(0.7);
- 		a{
+
+ 		a {
  			color: $white;
  		}
  	}
@@ -523,6 +567,7 @@ $black: #282828;
 	    width: 100%;
 	    padding: 20px;
 	    opacity: 0;
+	    z-index: 6;
 	    @include transition(0.6);
 
  		.buy {
@@ -689,8 +734,10 @@ $black: #282828;
  	color: $white;
  	font-size: 0.8em;
  }
+
+/*Social Media*/
  .socialMedia {
- 	text-align: right;
+ 	
  	li {
  		display: inline-block;
  		padding: 0 2px;
@@ -701,6 +748,26 @@ $black: #282828;
  		padding: 5px 10px;
  		@include transition(0.3);
  	}
+ }
+ .socialMedia-color {
+ 	a {
+ 		&.fb {
+				color: #3b5999;
+			}
+	 	&.tw {
+				color: #2ac6f7;
+			}
+	 	&.ig {
+				color: #fb3958;
+			}
+	 	&.wA {
+				color: #4dc247;
+			}
+		&:hover {
+			color: $white;
+		}
+ 	}
+
  }
  a.fb:hover{
  			background-color: #3b5999;
