@@ -467,7 +467,7 @@ li {
 
 /* --- align --- */
 .alignLeft {
-  text-align: left; }
+  text-align: left !important; }
 
 .alignRight {
   text-align: right; }
@@ -824,7 +824,8 @@ figure {
   -moz-box-shadow: 0 3px 5px 0 rgba(0, 1, 1, 0.1);
   -o-box-shadow: 0 3px 5px 0 rgba(0, 1, 1, 0.1); }
   .post figure, .post-detail figure, aside figure {
-    position: relative; }
+    position: relative;
+    overflow: hidden; }
   .post img, .post-detail img, aside img {
     background-size: cover;
     background-repeat: no-repeat;
@@ -844,6 +845,21 @@ figure {
   .post article, .post-detail article, aside article {
     padding: 15px 20px 15px 0; }
 
+.slideInSection {
+  position: absolute;
+  transform: translateX(-100%);
+  left: 0;
+  bottom: 0;
+  padding: 10px;
+  background-color: #0094c9;
+  font-size: 0.85em;
+  color: #ffffff;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  font-weight: bold; }
+
 a {
   transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.3s ease-in-out;
@@ -851,6 +867,8 @@ a {
   -o-transition: all 0.3s ease-in-out; }
   a:hover .post .overlay {
     opacity: 0.3; }
+  a:hover .post .slideInSection {
+    transform: translateX(0); }
 
 .post-detail {
   margin: 30px 30px 20px; }
@@ -922,6 +940,17 @@ a {
       -o-border-radius: 100%;
       margin-top: 10px; }
 
+.owl-header-hero {
+  background-color: #272822; }
+  .owl-header-hero .owl-dots {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%); }
+
+.owl-header-hero-or {
+  background-color: #fcaa11; }
+
 /*----------------------------------------------NEWS PAGE-----------------------------------------------------*/
 .underNav {
   margin-top: 60px; }
@@ -931,14 +960,6 @@ a {
   top: 18.5%;
   left: 10%;
   z-index: 5; }
-
-.owl-header-news .owl-item {
-  margin-right: 0 !important; }
-.owl-header-news .owl-dots {
-  position: absolute;
-  bottom: 10px;
-  left: 50%;
-  transform: translateX(-50%); }
 
 .search {
   padding-right: 30px; }
