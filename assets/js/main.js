@@ -12,15 +12,6 @@
 	    }) ;
 
 
-		// to ease when click '#' url
-		$(document).on('click', 'a', function(event){
-		    event.preventDefault();
-
-		    $('html, body').animate({
-		        scrollTop: $( $.attr(this, 'href') ).offset().top
-		    }, 1000);
-		});
-
 		//owl carousel
 		var owl = $('.carousel-1');
 		owl.owlCarousel({

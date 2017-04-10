@@ -1078,7 +1078,20 @@
 
 <!-- SOME JAVASCRIPT HERE -->
 <script type="text/javascript">
-	new WOW().init();
+$(document).ready(function(){
+	// new WOW().init();
+
+	// to ease when click '#' url
+	$(document).on('click', 'a', function(event){
+	    event.preventDefault();
+
+	    $('html, body').animate({
+	        scrollTop: $( $.attr(this, 'href') ).offset().top
+	    }, 1000);
+	});
+	
+});
+
 </script>
 
 </body>
