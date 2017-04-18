@@ -524,6 +524,53 @@ $black: #282828;
  .underNav {
  	margin-top: 60px;
  }
+ .big-category {
+ 	background-color: $blue;
+ 	padding: 20px;
+ 	@include box-shadow();
+
+ 	a {
+ 		color: $white;
+ 		text-align: center;
+
+ 		.wrap-category {
+ 			padding: 15px;
+
+ 			&:before,&:after {
+ 				content : '';
+ 				position: absolute;
+ 				height: 1px;
+ 				background-color: $white;
+ 				width: 0;
+ 				@include transition(0.3);
+ 			}
+
+ 			&:before {
+ 				top: 20%;
+ 				left: 20%;
+
+ 			}
+
+ 			&:after {
+ 				right: 20%;
+ 				bottom: 20%;
+ 			}
+
+ 			h3 {
+ 				margin-top: 10px;
+ 			}
+ 		}
+
+ 		&:hover {
+ 			.wrap-category {
+
+ 				&:before,&:after {
+ 					width: 60%;
+ 				}
+ 			}
+ 		}
+ 	}
+ }
  .absOnHeader {
  	position: absolute; 
  	top: 18.5%;

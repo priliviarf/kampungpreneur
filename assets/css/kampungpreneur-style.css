@@ -955,6 +955,39 @@ a {
 .underNav {
   margin-top: 60px; }
 
+.big-category {
+  background-color: #0094c9;
+  padding: 20px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
+  -o-box-shadow: 0 0 4px rgba(0, 0, 0, 0.4); }
+  .big-category a {
+    color: #ffffff;
+    text-align: center; }
+    .big-category a .wrap-category {
+      padding: 15px; }
+      .big-category a .wrap-category:before, .big-category a .wrap-category:after {
+        content: '';
+        position: absolute;
+        height: 1px;
+        background-color: #ffffff;
+        width: 0;
+        transition: all 0.3s ease-in-out;
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out; }
+      .big-category a .wrap-category:before {
+        top: 20%;
+        left: 20%; }
+      .big-category a .wrap-category:after {
+        right: 20%;
+        bottom: 20%; }
+      .big-category a .wrap-category h3 {
+        margin-top: 10px; }
+    .big-category a:hover .wrap-category:before, .big-category a:hover .wrap-category:after {
+      width: 60%; }
+
 .absOnHeader {
   position: absolute;
   top: 18.5%;
