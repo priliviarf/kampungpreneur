@@ -958,6 +958,7 @@ a {
 .big-category {
   background-color: #0094c9;
   padding: 20px;
+  margin: 20px 0px;
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
   -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
   -moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);

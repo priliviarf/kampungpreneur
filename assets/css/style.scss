@@ -527,6 +527,7 @@ $black: #282828;
  .big-category {
  	background-color: $blue;
  	padding: 20px;
+ 	margin: 20px 0px;
  	@include box-shadow();
 
  	a {
