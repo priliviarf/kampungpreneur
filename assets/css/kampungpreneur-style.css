@@ -614,7 +614,7 @@ a .linkHover {
 a:hover .linkHover {
   color: #0094c9; }
 
-#news > .areaContainer, #product > .areaContainer {
+#news > .areaContainer, #product > .areaContainer, #register > .areaContainer {
   background-color: #f7f7f7; }
 
 .mypills-center {
