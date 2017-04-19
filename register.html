@@ -73,8 +73,135 @@
 		<section class="row">
 			<div class="col-md-12">
 				<section class="post-detail pd-30">
-					<h3 class="openSansSemiBold">Daftar</h3>
-					<hr class="hrSide-blue">
+					<h3 class="openSansSemiBold">Pendaftaran Kampung Preneur</h3>
+
+					<section class="mypills-center">
+						<ul class="nav nav-pills">
+						    <li class="active">
+						    	<a data-toggle="pill" href="#one">
+						    		<h2 class="mg-5"><i class="fa fa-home"></i></h2>
+						    		<p class="openSansSemiBold">Kampung</p>
+							    </a>
+						    </li>
+						    <li class="">
+						    	<a data-toggle="pill" href="#two">
+						    		<h2 class="mg-5"><i class="fa fa-group"></i></h2>
+						    		<p class="openSansSemiBold">Kelompok</p>
+						    	</a>
+						    </li>
+						</ul>
+					
+						<div class="tab-content">
+						    <div id="one" class="tab-pane fade in active">
+						    	<section class="row mg-bt-30">
+							   		<div class="col-md-6 col-md-offset-3">
+							   			<form method="POST" action="">
+							   				<div class="form-control form-control-1">
+							   					<div class="form-group">
+	   												<label class="control-label openSansSemiBold">Alamat Email </label> <label class="floatRight smaller gray">Wajib Diisi</label>
+	   												<input type="text" name="email" id="email" placeholder="Email" class="form-control" required>
+	   											</div>
+	   											<div class="form-group">
+	   												<label class="control-label openSansSemiBold">Password</label> <label class="floatRight smaller gray">Wajib Diisi</label>
+	   												<input type="password" name="password" id="password" placeholder="Password" class="form-control" required>
+	   											</div>
+	   											<div class="form-group">
+	   												<label class="control-label openSansSemiBold">Konfirmasi Password</label> <label class="floatRight smaller gray">Wajib Diisi</label>
+	   												<input type="password" name="con_password" id="con_password" placeholder="Konfirmasi Password" class="form-control" required>
+	   											</div>
+	   											<hr class="mg-bt-30">
+	   											<div class="form-group">
+	   												<label class="control-label openSansSemiBold">Nama Kampung</label> <label class="floatRight smaller gray">Wajib Diisi</label>
+	   												<input type="text" name="kampung_name" id="kampung_name" placeholder="Nama Kampung" class="form-control" required>
+	   											</div>
+	   											<div class="form-group">
+	   												<label class="control-label openSansSemiBold">Alamat Kampung</label> <label class="floatRight smaller gray">Wajib Diisi</label>
+	   												<textarea name="kampung_add" id="kampung_add" placeholder="Alamat Kampung" rows="5" class="form-control" required></textarea>
+	   											</div>
+	   											<div class="form-group">
+	   												<label class="control-label openSansSemiBold">Nama Penanggung Jawab</label> <label class="floatRight smaller gray">Wajib Diisi</label>
+	   												<input type="text" name="pj_name" id="pj_name" placeholder="Nama Penanggung Jawab" class="form-control" required>
+	   											</div>
+	   											<div class="form-group">
+	   												<label class="control-label openSansSemiBold">Nomor Telepon</label> <label class="floatRight smaller gray">Wajib Diisi</label>
+	   												<div class="input-group">
+	   												    <span class="input-group-addon">+62</span>
+	   												    <input id="phone_number" type="tel" class="form-control" name="phone_number" placeholder="Nomor Telepon">
+	   												</div>
+	   											</div>
+	   											<div class="form-group">
+	   												<input type="submit" class="floatRight mg-l-10 btn btn-default" value="Kirim" name=""> 
+	   												<input type="reset" class="floatRight btn btn-info" name="">
+	   											</div>
+							   				</div>
+							   			</form>
+							   		</div>
+						    	</section>
+						    </div>
+						    <div id="two" class="tab-pane fade">
+						    	<section class="row mg-bt-30">
+							   		<div class="col-md-6 col-md-offset-3">
+							   			<form method="POST" action="">
+							   				<div class="form-control form-control-1">
+							   					<div class="form-group">
+	   												<label class="control-label openSansSemiBold">Alamat Email </label> <label class="floatRight smaller gray">Wajib Diisi</label>
+	   												<input type="text" name="email" id="email" placeholder="Email" class="form-control" required>
+	   											</div>
+	   											<div class="form-group">
+	   												<label class="control-label openSansSemiBold">Password</label> <label class="floatRight smaller gray">Wajib Diisi</label>
+	   												<input type="password" name="password" id="password" placeholder="Password" class="form-control" required>
+	   											</div>
+	   											<div class="form-group">
+	   												<label class="control-label openSansSemiBold">Konfirmasi Password</label> <label class="floatRight smaller gray">Wajib Diisi</label>
+	   												<input type="password" name="con_password" id="con_password" placeholder="Konfirmasi Password" class="form-control" required>
+	   											</div>
+	   											<hr class="mg-bt-30">
+	   											<div class="form-group">
+	   												<label class="control-label openSansSemiBold">Pilih Kampung</label> <label class="floatRight smaller gray">Wajib Diisi</label>
+	   												<select class="form-control" id="pilih_kampung" required>
+	   													<option>Nama Kampung</option>
+	   													<option>Nama Kampung</option>
+	   													<option>Nama Kampung</option>
+	   												</select>
+	   											</div>
+	   											<div class="form-group">
+	   												<label class="control-label openSansSemiBold">Nama Kelompok</label> <label class="floatRight smaller gray">Wajib Diisi</label>
+	   												<input type="text" name="kelompok_name" id="kelompok_name" placeholder="Nama Kelompok" class="form-control" required>
+	   											</div>
+	   											<div class="form-group">
+	   												<label class="control-label openSansSemiBold">Kategori Kelompok</label> <label class="floatRight smaller gray">Wajib Diisi</label>
+	   												<select class="form-control" id="pilih_kampung" required>
+	   													<option>Kategori</option>
+	   													<option>Kategori</option>
+	   													<option>Kategori</option>
+	   												</select>
+	   											</div>
+	   											<div class="form-group">
+	   												<label class="control-label openSansSemiBold">Alamat Kelompok</label> <label class="floatRight smaller gray">Wajib Diisi</label>
+	   												<textarea name="kelompok_add" id="kelompok_add" placeholder="Alamat Kelompok" rows="5" class="form-control" required></textarea>
+	   											</div>
+	   											<div class="form-group">
+	   												<label class="control-label openSansSemiBold">Nama Penanggung Jawab</label> <label class="floatRight smaller gray">Wajib Diisi</label>
+	   												<input type="text" name="pj_name" id="pj_name" placeholder="Nama Penanggung Jawab" class="form-control" required>
+	   											</div>
+	   											<div class="form-group">
+	   												<label class="control-label openSansSemiBold">Nomor Telepon</label> <label class="floatRight smaller gray">Wajib Diisi</label>
+	   												<div class="input-group">
+	   												    <span class="input-group-addon">+62</span>
+	   												    <input id="phone_number" type="tel" class="form-control" name="phone_number" placeholder="Nomor Telepon">
+	   												</div>
+	   											</div>
+	   											<div class="form-group">
+	   												<input type="submit" class="floatRight mg-l-10 btn btn-info" value="Kirim" name=""> <input type="reset" class="floatRight btn btn-default" name="">
+	   											</div>
+							   				</div>
+							   			</form>
+							   		</div>
+						    	</section>
+						    </div>
+						</div>
+					</section>
+
 				</section>
 			</div>
 		</section>

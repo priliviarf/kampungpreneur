@@ -95,6 +95,9 @@
   color: #282828 !important; }
 
 /* --- Font Size --- */
+.smaller {
+  font-size: 0.8em; }
+
 .small {
   font-size: 0.9em; }
 
@@ -492,19 +495,35 @@ h2 {
 .form-control {
   border: 1px solid #ebebeb;
   border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -o-border-radius: 0;
   box-shadow: none !important;
   -webkit-box-shadow: none !important;
   -moz-box-shadow: none !important;
   -o-box-shadow: none !important; }
+  .form-control .input-group-addon {
+    border: none;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -o-border-radius: 0; }
+
+.form-control-1 {
+  border: none; }
+  .form-control-1 .form-group {
+    margin-bottom: 30px; }
 
 select.form-control {
-  width: 200px;
   display: inline;
   border-radius: 0px;
   box-shadow: 0 3px 5px 0 rgba(0, 1, 1, 0.1);
   -webkit-box-shadow: 0 3px 5px 0 rgba(0, 1, 1, 0.1);
   -moz-box-shadow: 0 3px 5px 0 rgba(0, 1, 1, 0.1);
   -o-box-shadow: 0 3px 5px 0 rgba(0, 1, 1, 0.1); }
+
+.select-form-md {
+  width: 200px; }
 
 .btn-default {
   background-color: #fcaa11;
@@ -522,6 +541,16 @@ select.form-control {
     background-color: #e67e22;
     color: #ffffff;
     border-color: #e67e22; }
+
+.btn-info {
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  box-shadow: 0 3px 5px 0 rgba(0, 1, 1, 0.1);
+  -webkit-box-shadow: 0 3px 5px 0 rgba(0, 1, 1, 0.1);
+  -moz-box-shadow: 0 3px 5px 0 rgba(0, 1, 1, 0.1);
+  -o-box-shadow: 0 3px 5px 0 rgba(0, 1, 1, 0.1); }
 
 /* --- KampungPreneurReset --- */
 .tab-content p {
@@ -1380,7 +1409,10 @@ a.wA:hover {
     margin: 30px 5px 20px; }
 
   .comment img {
-    width: 89px; } }
+    width: 89px; }
+
+  .mypills-center {
+    padding: 20px 0px; } }
 @media screen and (min-width: 768px) {
   .post {
     height: 250px; }

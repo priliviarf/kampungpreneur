@@ -165,14 +165,28 @@ h2 {
 /* --- Form --- */
 .form-control {
 	border: 1px solid $lightgray;
-    border-radius: 0;
+    @include radius(0);
     @include no-box-shadow();
+
+    .input-group-addon {
+    	border: none;
+    	@include radius(0);
+    }
+}
+.form-control-1 {
+	border: none;
+
+	.form-group {
+		margin-bottom: 30px
+	}
 }
 select.form-control {
-	width: 200px;
 	display: inline;
 	border-radius: 0px;
 	@include box-shadow2();
+}
+.select-form-md {
+	width: 200px;
 }
 .btn-default {
 	background-color: $orange;
@@ -186,6 +200,10 @@ select.form-control {
 	    color: $white;
 	    border-color: $darkorange;
     }
+}
+.btn-info {
+	@include transition(0.3);
+    @include box-shadow2();
 }
 
 /* --- KampungPreneurReset --- */
