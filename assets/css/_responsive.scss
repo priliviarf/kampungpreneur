@@ -183,6 +183,11 @@
  		padding: 20px 0px;
  	}
 }
+@media screen and (max-width: 360px) {
+	.h1-mainTitle {
+		font-size: 2em;
+	}
+}
 @media screen and (min-width: 768px) {
 	.post {
 		height: 250px;
