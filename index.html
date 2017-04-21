@@ -1081,13 +1081,14 @@ $(document).ready(function(){
 	// new WOW().init();
 
 	// to ease when click '#' url
-	$(document).on('click', 'a', function(event){
-	    event.preventDefault();
-
-	    $('html, body').animate({
-	        scrollTop: $( $.attr(this, 'href') ).offset().top
-	    }, 1000);
-	});
+    $(document).on('click', 'a', function(event){
+        if($.attr(this, 'href').charAt(0)=='#'){
+            event.preventDefault();
+            $('html, body').animate({
+                scrollTop: $( $.attr(this, 'href') ).offset().top
+            }, 1000);       
+        }
+    });
 	
 });
 
