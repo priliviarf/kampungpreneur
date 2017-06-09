@@ -743,6 +743,8 @@ figure {
         -webkit-transition: all 0.3s ease-in-out;
         -moz-transition: all 0.3s ease-in-out;
         -o-transition: all 0.3s ease-in-out; }
+    .navbar-nav > li > a:active, .navbar-nav > li > a:visited {
+      border: none; }
     .navbar-nav > li > a:after {
       content: "";
       position: absolute;

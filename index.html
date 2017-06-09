@@ -34,7 +34,64 @@
 	
 </head>
 <body>
-<!-- <div class="se-pre-con"></div> -->
+<!-- Modal -->
+<div id="formPendampingan" class="modal fade">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+				<h3 class="modal-title">Ajukan Pendampingan</h3>
+			</div>
+			<div class="modal-body">
+				<section class="row">
+					<div class="col-md-10 col-md-offset-1">
+						<form method="POST" action="">
+			   				<div class="form-control form-control-1">
+			   					<div class="form-group">
+									<label class="control-label openSansSemiBold">Nama </label> <label class="floatRight smaller gray">Wajib Diisi</label>
+									<input type="text" name="email" id="email" placeholder="Nama" class="form-control" required>
+								</div>
+								<div class="form-group">
+									<label class="control-label openSansSemiBold">Nama Kelompok</label> <label class="floatRight smaller gray">Wajib Diisi</label>
+									<select class="form-control" id="pilih_kampung" required>
+										<option>Nama Kelompok</option>
+										<option>Nama Kelompok</option>
+										<option>Nama Kelompok</option>
+									</select>
+								</div>
+								<div class="form-group">
+									<label class="control-label openSansSemiBold">Alamat Kelompok</label> <label class="floatRight smaller gray">Wajib Diisi</label>
+									<textarea name="kelompok_add" id="kelompok_add" placeholder="Alamat Kelompok" rows="5" class="form-control" required></textarea>
+								</div>
+								<div class="form-group">
+									<label class="control-label openSansSemiBold">Nomor Telepon</label> <label class="floatRight smaller gray">Wajib Diisi</label>
+									<div class="input-group">
+									    <span class="input-group-addon">+62</span>
+									    <input id="phone_number" type="tel" class="form-control" name="phone_number" placeholder="Nomor Telepon">
+									</div>
+								</div>
+								<hr class="mg-bt-30">
+								<div class="form-group">
+									<label class="control-label openSansSemiBold">Masalah yang dihadapi</label> <label class="floatRight smaller gray">Wajib Diisi</label>
+									<textarea name="kelompok_add" id="kelompok_add" placeholder="Deskripsi permasalahan yang sedang dihadapi" rows="5" class="form-control" required></textarea>
+								</div>
+								<div class="form-group">
+									<label class="control-label openSansSemiBold">Harapan hasil yang ingin didapat dari pelatihan</label> <label class="floatRight smaller gray">Wajib Diisi</label>
+									<textarea name="kelompok_add" id="kelompok_add" placeholder="Deskripsi hasil yang ingin didapat dari pelatihan" rows="5" class="form-control" required></textarea>
+								</div>
+								<div class="form-group">
+									<input type="submit" class="floatRight mg-l-10 btn btn-info" value="Kirim" name=""> <input type="reset" class="floatRight btn btn-default" name="">
+								</div>
+							</div>
+						</form>
+					</div>
+				</section>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- /modal -->
+
 <!-- Navbar section -->
 <section>
 	<nav id="navbar" class="navbar navbar-dafult navbar-fixed-top">
@@ -55,7 +112,7 @@
 	        <li><a href="#header">BERANDA</a></li>
 	        <li><a href="#about">TENTANG KAMI</a></li>
 	        <li><a href="#news">BERITA</a></li>
-	        <li><a href="#">PENDAMPINGAN</a></li>
+	        <li><a href="" data-toggle="modal" data-target="#formPendampingan">PENDAMPINGAN</a></li>
 	        <li><a href="#">BANTUAN MODAL</a></li>
 	        <li><a href="#store">USAHA KAMI</a></li>
 	        <li><a href="#"><i class="fa fa-user fa-lg"></i> DAFTAR</a></li>
@@ -760,7 +817,7 @@
 				    			</figure>
 				    		</div>
 				    		<div class="col-md-10 col-sm-10 col-xs-8">
-				    			<p class="gray">
+				    			<p>
 				    				Quod fierent torquatos no sit. Mundi blandit suscipiantur per an, et duis atqui rationibus quo. 	    				Oblique labores vix at, cu modus veritus ius. In dicant legendos complectitur duo. Labitur legimus ex mea, graecis intellegat pri ex.
 				    			</p>
 				    			<p class="noMag or openSansSemiBold big">
@@ -780,7 +837,7 @@
 				    			</figure>
 				    		</div>
 				    		<div class="col-md-10 col-sm-10 col-xs-8">
-				    			<p class="gray">
+				    			<p>
 				    				Quod fierent torquatos no sit. Mundi blandit suscipiantur per an, et duis atqui rationibus quo. 	    				Oblique labores vix at, cu modus veritus ius. In dicant legendos complectitur duo. Labitur legimus ex mea, graecis intellegat pri ex.
 				    			</p>
 				    			<p class="noMag or openSansSemiBold big">
@@ -800,7 +857,7 @@
 				    			</figure>
 				    		</div>
 				    		<div class="col-md-10 col-sm-10 col-xs-8">
-				    			<p class="gray">
+				    			<p>
 				    				Quod fierent torquatos no sit. Mundi blandit suscipiantur per an, et duis atqui rationibus quo. 	    				Oblique labores vix at, cu modus veritus ius. In dicant legendos complectitur duo. Labitur legimus ex mea, graecis intellegat pri ex.
 				    			</p>
 				    			<p class="noMag or openSansSemiBold big">
