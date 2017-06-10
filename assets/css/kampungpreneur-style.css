@@ -1428,5 +1428,55 @@ a.wA:hover {
 
   .footerTitle {
     padding-left: 0px; } }
+/* ================== SUBWEB =====================*/
+.headerCover-2 {
+  height: auto; }
+  .headerCover-2 figure img {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; }
+  .headerCover-2 .overlay {
+    top: 0; }
+
+.aboutSubWeb h3 {
+  margin: 0 0 10px 0; }
+.aboutSubWeb figure {
+  text-align: center;
+  padding: 20px 20px 20px 50px; }
+  .aboutSubWeb figure img {
+    max-width: 450px; }
+.aboutSubWeb .aboutSide {
+  padding: 20px 50px 20px 20px; }
+
+.galSec {
+  padding: 20px 10px; }
+
+.visible {
+  opacity: 1 !important; }
+
+#gallery {
+  background-color: #f7f7f7; }
+  #gallery a figure img {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; }
+  #gallery a .overlay {
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #0094c9;
+    opacity: 0.8;
+    position: absolute;
+    opacity: 0.0;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out; }
+  #gallery a i {
+    opacity: 0.0; }
+  #gallery a:hover .overlay {
+    opacity: 0.8; }
+  #gallery a:hover i {
+    opacity: 0.8; }
 
 /*# sourceMappingURL=kampungpreneur-style.css.map */

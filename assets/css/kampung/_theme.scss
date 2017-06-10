@@ -1,0 +1,34 @@
+.visible {
+	opacity:1 !important;
+}
+#gallery {
+	background-color: $flatwhite;
+
+	a {
+		figure {
+			img {
+				@include img-bg();
+			}
+		}
+		.overlay {
+			top:0;
+			@include overlay($blue,0.8);
+			opacity: 0.0;
+			@include transition(0.3);
+		}
+
+		i {
+			opacity: 0.0;
+		}
+
+		&:hover {
+			.overlay {
+				opacity: 0.8;
+			}
+
+			i {
+				opacity: 0.8;
+			}
+		}
+	}
+}

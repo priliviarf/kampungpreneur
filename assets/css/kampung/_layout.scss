@@ -1,0 +1,33 @@
+.headerCover-2 {
+	height: auto;
+
+	figure {
+		img {
+			@include img-bg();
+		}
+	}
+
+	.overlay {
+		top: 0;
+	}
+}
+.aboutSubWeb {
+	h3 {
+		margin: 0 0 10px 0;
+	}
+
+	figure {
+		text-align: center;
+		padding: 20px 20px 20px 50px;
+
+		img {
+			max-width: 450px;
+		}
+	}
+	.aboutSide {
+		padding: 20px 50px 20px 20px;
+	}
+}
+.galSec {
+	padding: 20px 10px;
+}
